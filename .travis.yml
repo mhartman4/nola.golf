@@ -11,3 +11,6 @@ deploy:
   acl: public_read 
   region: "us-east-1"
   local_dir: _site
+  on:
+    all_branches: true
+    
