@@ -1,0 +1,13 @@
+language: ruby
+
+script: bundle exec jekyll build
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: nola.golf
+  skip_cleanup: true
+  acl: public_read 
+  region: "us-east-1"
+  local_dir: _site
