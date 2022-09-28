@@ -1,6 +1,6 @@
 <!-- ##TODO: UNCOMMENT THIS FILE!! -->
 
-<!-- <script>
+<script>
  	import Picker from "./Picker.svelte"
 	import Weekly from "./Weekly.svelte"
 	import Overall from "./Overall.svelte"
@@ -43,4 +43,4 @@
 		font-size: 25px;
 		font-family: "Comic Sans MS", "Comic Sans","Marker Felt";
 	}
-</style> -->
+</style>
