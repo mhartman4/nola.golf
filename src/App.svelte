@@ -3,6 +3,7 @@
 <script>
  	import Picker from "./Picker.svelte"
 	import Weekly from "./Weekly.svelte"
+	import WeeklyEspn from "./WeeklyEspn.svelte"
 	import Overall from "./Overall.svelte"
 	import ConfidencePool from "./ConfidencePool/ConfidencePool.svelte"
 	import { onMount } from "svelte"
@@ -23,6 +24,7 @@
 		
 		{#if currentPage === "Weekly"}
 			<Weekly />
+			<!-- <WeeklyEspn /> -->
 		{:else if currentPage === "Overall"}
 			<Overall />
 		{/if}	

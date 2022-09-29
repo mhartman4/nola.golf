@@ -190,7 +190,7 @@
 	const makePgaCall = async (securityBlurb, tournament) => {
 			if (tournament.id != "018")
 			{
-				const pgaResp = await fetch("https://lbdata.pgatour.com/2022/r/" + tournament.id + "/leaderboard.json" + securityBlurb + "&timestamp=" + Date.now());
+				const pgaResp = await fetch("https://lbdata.pgatour.com/2023/r/" + tournament.id + "/leaderboard.json" + securityBlurb + "&timestamp=" + Date.now());
 				var jsonResp = await pgaResp.json()
 				leaderboard = await jsonResp.rows
 			}

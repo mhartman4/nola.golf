@@ -12,12 +12,12 @@
     function toggleRoster() {
     	rosterVisible = !rosterVisible
     	if (rosterVisible) {
-		  	ga('send', {
-		  		hitType: 'event',
-		  		eventCategory: 'Weekly',
-		  		eventAction: 'Click Team',
-		  		eventLabel: team.name
-			});
+		 //  	ga('send', {
+		 //  		hitType: 'event',
+		 //  		eventCategory: 'Weekly',
+		 //  		eventAction: 'Click Team',
+		 //  		eventLabel: team.name
+			// });
     	}
   
     }
