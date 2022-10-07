@@ -23,8 +23,8 @@
 		<br><br>
 		
 		{#if currentPage === "Weekly"}
-			<Weekly />
-			<!-- <WeeklyEspn /> -->
+			<!-- <Weekly /> -->
+			<WeeklyEspn />
 		{:else if currentPage === "Overall"}
 			<Overall />
 		{/if}	

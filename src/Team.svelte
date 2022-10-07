@@ -1,10 +1,11 @@
 <script>
 	import Roster from "./Roster.svelte"
-	export let team, placeNumber, isFavorite
+	export let team, placeNumber, isFavorite, activeGolferCounts
 	
 	// let teamName = team.name
 	// let teamNameNoOwner = team.teamName
 	// let owner = team.owner
+	
 	let pictureUrl = "https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_" + team.roster[0].id + ".png"
     let rosterVisible = false
     let dvLeague = window.location.href.includes("?league=dv")
@@ -34,9 +35,22 @@
 					<td width="55">
 						<img class="player-photo" src="{pictureUrl}" width="45" height="45">
 					</td>
+
 					<td class="team-name {isFavorite ? " favorite" : ""}">
 						{team.teamName}
-						<div class="owner {dvLeague ? " invisible" : ""}">{team.owner}</div>
+
+						<div class="owner {dvLeague ? " invisible" : ""}">{team.owner}&nbsp;&nbsp;
+						{#if activeGolferCounts["pga"] > 0}
+								<span class="golfer-count pga">{activeGolferCounts["pga"]}</span>
+							{/if}
+							{#if activeGolferCounts["liv"] > 0}
+								<span class="golfer-count liv">{activeGolferCounts["liv"]}</span>
+							{/if}
+							{#if activeGolferCounts["eur"] > 0}
+								<span class="golfer-count eur">{activeGolferCounts["eur"]}</span>
+							{/if}
+						</div>
+						
 					</td>
 					<td class="team-earnings {isFavorite ? " favorite" : ""}">
 						{numeral(team.totalMoney).format('$0,0')}<br>
@@ -87,7 +101,29 @@
 	.favorite {
 		color: #de0000;
 	}
+
 	.invisible {
 		display: none;
+	}
+	.golfer-count {
+		display: inline-block;
+	    padding: 0.25em 0.4em;
+	    font-size: 80%;
+	    font-weight: 300;
+	    line-height: 1;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: baseline;
+	    border-radius: 0.25rem;
+	    color: white;
+	}
+	.pga {
+		background-color: black;
+	}
+	.liv {
+		background-color: #0b5394;
+	}
+	.eur {
+		background-color: #e69138;
 	}
 </style>

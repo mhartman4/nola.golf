@@ -1,6 +1,7 @@
 <script>
 	import { slide } from 'svelte/transition'
 	export let roster, teamName
+	
 </script>
 
 <div class="roster" transition:slide>
@@ -18,7 +19,7 @@
 		<tbody>
 			{#each roster as player}
 				<!-- {#if player.isPlaying} -->
-					<tr class="player-row{player.isPlaying ? '' : ' inactive'}{player.secondTourney ? ' second-tourney' : ''}{' ' + player.pgaStatus}">
+					<tr class="player-row{player.isPlaying ? '' : ' inactive'}{player.secondTourney ? ' second-tourney' : ''}{' ' + player.pgaStatus} {player.league}">
 						<td>{player.name}</td>
 	                    <td>{player.position ? numeral(player.projMoney).format("$0,0") : ""}</td>
 	                    <td>{player.isPlaying ? (player.position ? player.position : (player.pgaStatus === "wd" ? "WD" : (player.pgaStatus == "active" ? "" : "CUT"))) : ""}</td>
@@ -77,5 +78,12 @@
 	}
 	.favorite-button {
 		margin: 5px;
+	}
+
+	.liv {
+		background-color: #9fc5e8;
+	}
+	.eur {
+		background-color: #f9cb9c;
 	}
 </style>
