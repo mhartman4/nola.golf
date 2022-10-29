@@ -9090,7 +9090,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (170:0) {:else}
+    // (177:0) {:else}
     function create_else_block_1(ctx) {
     	let img;
     	let img_src_value;
@@ -9104,8 +9104,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$7, 170, 1, 5397);
-    			add_location(span, file$7, 170, 127, 5523);
+    			add_location(img, file$7, 177, 1, 5534);
+    			add_location(span, file$7, 177, 127, 5660);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -9122,14 +9122,14 @@ var app = (function () {
     		block,
     		id: create_else_block_1.name,
     		type: "else",
-    		source: "(170:0) {:else}",
+    		source: "(177:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (168:0) {#if tourneyName}
+    // (175:0) {#if tourneyName}
     function create_if_block_4(ctx) {
     	let h1;
     	let t;
@@ -9139,7 +9139,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*tourneyName*/ ctx[1]);
     			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
-    			add_location(h1, file$7, 168, 1, 5344);
+    			add_location(h1, file$7, 175, 1, 5481);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9157,14 +9157,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(168:0) {#if tourneyName}",
+    		source: "(175:0) {#if tourneyName}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (173:0) {#if livTourneyName}
+    // (180:0) {#if livTourneyName}
     function create_if_block_3(ctx) {
     	let h1;
     	let t;
@@ -9174,7 +9174,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*livTourneyName*/ ctx[2]);
     			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
-    			add_location(h1, file$7, 172, 20, 5595);
+    			add_location(h1, file$7, 179, 20, 5732);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9192,14 +9192,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(173:0) {#if livTourneyName}",
+    		source: "(180:0) {#if livTourneyName}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (174:0) {#if eurTourneyName}
+    // (181:0) {#if eurTourneyName}
     function create_if_block_2$1(ctx) {
     	let h1;
     	let t;
@@ -9209,7 +9209,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*eurTourneyName*/ ctx[3]);
     			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
-    			add_location(h1, file$7, 173, 20, 5671);
+    			add_location(h1, file$7, 180, 20, 5808);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9227,14 +9227,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(174:0) {#if eurTourneyName}",
+    		source: "(181:0) {#if eurTourneyName}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (190:1) {:else}
+    // (197:1) {:else}
     function create_else_block$2(ctx) {
     	let img;
     	let img_src_value;
@@ -9248,8 +9248,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$7, 190, 2, 6104);
-    			add_location(span, file$7, 190, 81, 6183);
+    			add_location(img, file$7, 197, 2, 6241);
+    			add_location(span, file$7, 197, 81, 6320);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -9268,14 +9268,14 @@ var app = (function () {
     		block,
     		id: create_else_block$2.name,
     		type: "else",
-    		source: "(190:1) {:else}",
+    		source: "(197:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (186:17) 
+    // (193:17) 
     function create_if_block_1$2(ctx) {
     	let div;
     	let code;
@@ -9290,9 +9290,9 @@ var app = (function () {
     			t0 = text("🚨 ");
     			t1 = text(/*error*/ ctx[4]);
     			t2 = text(" 🚨");
-    			add_location(code, file$7, 187, 3, 6057);
+    			add_location(code, file$7, 194, 3, 6194);
     			attr_dev(div, "class", "error svelte-ih46r3");
-    			add_location(div, file$7, 186, 2, 6034);
+    			add_location(div, file$7, 193, 2, 6171);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -9315,14 +9315,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(186:17) ",
+    		source: "(193:17) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (176:1) {#if teams}
+    // (183:1) {#if teams}
     function create_if_block$5(ctx) {
     	let each_1_anchor;
     	let current;
@@ -9411,14 +9411,14 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(176:1) {#if teams}",
+    		source: "(183:1) {#if teams}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (177:2) {#each teams as team, i}
+    // (184:2) {#each teams as team, i}
     function create_each_block$4(ctx) {
     	let table;
     	let tr;
@@ -9444,12 +9444,12 @@ var app = (function () {
     			td = element("td");
     			create_component(team.$$.fragment);
     			t = space();
-    			add_location(td, file$7, 179, 5, 5849);
-    			add_location(tr, file$7, 178, 4, 5839);
+    			add_location(td, file$7, 186, 5, 5986);
+    			add_location(tr, file$7, 185, 4, 5976);
     			attr_dev(table, "class", "team svelte-ih46r3");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$7, 177, 3, 5790);
+    			add_location(table, file$7, 184, 3, 5927);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -9484,7 +9484,7 @@ var app = (function () {
     		block,
     		id: create_each_block$4.name,
     		type: "each",
-    		source: "(177:2) {#each teams as team, i}",
+    		source: "(184:2) {#each teams as team, i}",
     		ctx
     	});
 
@@ -9532,7 +9532,7 @@ var app = (function () {
     			div = element("div");
     			if_block3.c();
     			attr_dev(div, "class", "teams");
-    			add_location(div, file$7, 174, 0, 5727);
+    			add_location(div, file$7, 181, 0, 5864);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9700,175 +9700,177 @@ var app = (function () {
     				break;
     		}
 
-    		golfers = json.events[0].competitions[0].competitors;
+    		if (json.events[0].tournament.scoringSystem.name != "Match") {
+    			golfers = json.events[0].competitions[0].competitors;
 
-    		golfers = golfers.sort((a, b) => {
-    			return Number(a.status.position.id) - Number(b.status.position.id);
-    		});
+    			golfers = golfers.sort((a, b) => {
+    				return Number(a.status.position.id) - Number(b.status.position.id);
+    			});
 
-    		var purse = json.events[0].purse;
+    			var purse = json.events[0].purse;
 
-    		var payoutPercentages = [
-    			null,
-    			0.18,
-    			0.109,
-    			0.069,
-    			0.049,
-    			0.041,
-    			0.03625,
-    			0.03375,
-    			0.03125,
-    			0.02925,
-    			0.02725,
-    			0.02525,
-    			0.02325,
-    			0.02125,
-    			0.01925,
-    			0.01825,
-    			0.01725,
-    			0.01625,
-    			0.01525,
-    			0.01425,
-    			0.01325,
-    			0.01225,
-    			0.01125,
-    			0.01045,
-    			0.00965,
-    			0.00885,
-    			0.00805,
-    			0.00775,
-    			0.00745,
-    			0.00715,
-    			0.00685,
-    			0.00655,
-    			0.00625,
-    			0.00595,
-    			0.0057,
-    			0.00545,
-    			0.0052,
-    			0.00495,
-    			0.00475,
-    			0.00455,
-    			0.00435,
-    			0.00415,
-    			0.00395,
-    			0.00375,
-    			0.00355,
-    			0.00335,
-    			0.00315,
-    			0.00295,
-    			0.00279,
-    			0.00265,
-    			0.00257,
-    			0.00251,
-    			0.00245,
-    			0.00241,
-    			0.00237,
-    			0.00235,
-    			0.00233,
-    			0.00231,
-    			0.00229,
-    			0.00227,
-    			0.00225,
-    			0.00223,
-    			0.00221,
-    			0.00219,
-    			0.00217,
-    			0.00215
-    		];
+    			var payoutPercentages = [
+    				null,
+    				0.18,
+    				0.109,
+    				0.069,
+    				0.049,
+    				0.041,
+    				0.03625,
+    				0.03375,
+    				0.03125,
+    				0.02925,
+    				0.02725,
+    				0.02525,
+    				0.02325,
+    				0.02125,
+    				0.01925,
+    				0.01825,
+    				0.01725,
+    				0.01625,
+    				0.01525,
+    				0.01425,
+    				0.01325,
+    				0.01225,
+    				0.01125,
+    				0.01045,
+    				0.00965,
+    				0.00885,
+    				0.00805,
+    				0.00775,
+    				0.00745,
+    				0.00715,
+    				0.00685,
+    				0.00655,
+    				0.00625,
+    				0.00595,
+    				0.0057,
+    				0.00545,
+    				0.0052,
+    				0.00495,
+    				0.00475,
+    				0.00455,
+    				0.00435,
+    				0.00415,
+    				0.00395,
+    				0.00375,
+    				0.00355,
+    				0.00335,
+    				0.00315,
+    				0.00295,
+    				0.00279,
+    				0.00265,
+    				0.00257,
+    				0.00251,
+    				0.00245,
+    				0.00241,
+    				0.00237,
+    				0.00235,
+    				0.00233,
+    				0.00231,
+    				0.00229,
+    				0.00227,
+    				0.00225,
+    				0.00223,
+    				0.00221,
+    				0.00219,
+    				0.00217,
+    				0.00215
+    			];
 
-    		const livPayoutPercentages = [
-    			null,
-    			0.20000,
-    			0.10625,
-    			0.07500,
-    			0.05250,
-    			0.04875,
-    			0.04000,
-    			0.03375,
-    			0.03125,
-    			0.02900,
-    			0.02800,
-    			0.02700,
-    			0.02250,
-    			0.01800,
-    			0.01350,
-    			0.01250,
-    			0.01200,
-    			0.01160,
-    			0.01130,
-    			0.01100,
-    			0.01000,
-    			0.00900,
-    			0.00860,
-    			0.00850,
-    			0.00840,
-    			0.00830,
-    			0.00820,
-    			0.00810,
-    			0.00800,
-    			0.00790,
-    			0.00780,
-    			0.00770,
-    			0.00760,
-    			0.00750,
-    			0.00740,
-    			0.00730,
-    			0.00720,
-    			0.00710,
-    			0.00700,
-    			0.00690,
-    			0.00680,
-    			0.00670,
-    			0.00660,
-    			0.00650,
-    			0.00640,
-    			0.00630,
-    			0.00620,
-    			0.00610,
-    			0.00600
-    		];
+    			const livPayoutPercentages = [
+    				null,
+    				0.20000,
+    				0.10625,
+    				0.07500,
+    				0.05250,
+    				0.04875,
+    				0.04000,
+    				0.03375,
+    				0.03125,
+    				0.02900,
+    				0.02800,
+    				0.02700,
+    				0.02250,
+    				0.01800,
+    				0.01350,
+    				0.01250,
+    				0.01200,
+    				0.01160,
+    				0.01130,
+    				0.01100,
+    				0.01000,
+    				0.00900,
+    				0.00860,
+    				0.00850,
+    				0.00840,
+    				0.00830,
+    				0.00820,
+    				0.00810,
+    				0.00800,
+    				0.00790,
+    				0.00780,
+    				0.00770,
+    				0.00760,
+    				0.00750,
+    				0.00740,
+    				0.00730,
+    				0.00720,
+    				0.00710,
+    				0.00700,
+    				0.00690,
+    				0.00680,
+    				0.00670,
+    				0.00660,
+    				0.00650,
+    				0.00640,
+    				0.00630,
+    				0.00620,
+    				0.00610,
+    				0.00600
+    			];
 
-    		golfers.forEach(g => {
-    			if (leagueSlug == "liv") {
-    				g.estimatedEarnings = livPayoutPercentages[g.status.position.id] * purse * 0.27;
-    			} else {
-    				g.estimatedEarnings = payoutPercentages[g.status.position.id] * purse;
-    			}
+    			golfers.forEach(g => {
+    				if (leagueSlug == "liv") {
+    					g.estimatedEarnings = livPayoutPercentages[g.status.position.id] * purse * 0.27;
+    				} else {
+    					g.estimatedEarnings = payoutPercentages[g.status.position.id] * purse;
+    				}
 
-    			if (isNaN(g.estimatedEarnings)) {
-    				g.estimatedEarnings = 0;
-    			}
-    		});
-
-    		await golfers.map(g => g.id);
-
-    		rawTeams.forEach(team => {
-    			team.roster.forEach(player => {
-    				const matches = golfers.filter(g => g.id == player.espnId);
-
-    				if (matches.length > 0) {
-    					const golfer = matches[0];
-    					player.isPlaying = true;
-    					player.position = golfer.status.position.displayName;
-    					player.projMoney = golfer.estimatedEarnings;
-
-    					if (golfer.estimatedEarnings) {
-    						team.totalMoney += golfer.estimatedEarnings;
-    					}
-
-    					player.pgaStatus = golfer.status.shortDetail;
-    					player.total = golfer.score.displayValue;
-    					player.today = golfer.linescores.at(-1).displayValue;
-    					player.thru = golfer.status.thru;
-    					player.league = leagueSlug;
-    					player.sort = golfer.estimatedEarnings;
-    					team.activeGolferCounts[leagueSlug] += 1;
+    				if (isNaN(g.estimatedEarnings)) {
+    					g.estimatedEarnings = 0;
     				}
     			});
-    		});
 
-    		return rawTeams;
+    			await golfers.map(g => g.id);
+
+    			rawTeams.forEach(team => {
+    				team.roster.forEach(player => {
+    					const matches = golfers.filter(g => g.id == player.espnId);
+
+    					if (matches.length > 0) {
+    						const golfer = matches[0];
+    						player.isPlaying = true;
+    						player.position = golfer.status.position.displayName;
+    						player.projMoney = golfer.estimatedEarnings;
+
+    						if (golfer.estimatedEarnings) {
+    							team.totalMoney += golfer.estimatedEarnings;
+    						}
+
+    						player.pgaStatus = golfer.status.shortDetail;
+    						player.total = golfer.score.displayValue;
+    						player.today = golfer.linescores.at(-1).displayValue;
+    						player.thru = golfer.status.thru;
+    						player.league = leagueSlug;
+    						player.sort = golfer.estimatedEarnings;
+    						team.activeGolferCounts[leagueSlug] += 1;
+    					}
+    				});
+    			});
+
+    			return rawTeams;
+    		}
     	};
 
     	// Get our team rosters from the Google Sheet / KVDB
