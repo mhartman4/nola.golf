@@ -18,7 +18,6 @@
 			teams = await hitESPN(rawTeams, "pga")
 			teams = await hitESPN(rawTeams, "liv")
 			teams = await hitESPN(rawTeams, "eur")
-			// teams = await sortTeams(teams)
 			
 			await teams.sort((a,b) => b.totalMoney - a.totalMoney )
 			
@@ -39,18 +38,21 @@
     	const response = await fetch(endpoint)
 		const json = await response.json()
 
-		switch(leagueSlug) {
-		  case "pga":
-		    tourneyName = json.events[0].name
-		    break;
-		  case "liv":
-		    livTourneyName = json.events[0].name
-		    break;
-		  case "eur":
-		    eurTourneyName = json.events[0].name
-		    break;
-		}
-		if (json.events[0].tournament.scoringSystem.name != "Match") {
+		var dateDiff = Math.floor((new Date() - Date.parse(json.events[0].endDate)) / (1000*60*60*24))
+
+		if (dateDiff >= -4 && dateDiff <= 4) {
+			switch(leagueSlug) {
+			  case "pga":
+			    tourneyName = json.events[0].name
+			    break;
+			  case "liv":
+			    livTourneyName = json.events[0].name
+			    break;
+			  case "eur":
+			    eurTourneyName = json.events[0].name
+			    break;
+			}
+
     		golfers = json.events[0].competitions[0].competitors	
 		
 			golfers = golfers.sort((a,b) => {
@@ -101,9 +103,8 @@
 				})
 
 			})
-			
-			return rawTeams	
     	}
+    	return rawTeams	
 		
     }
 
@@ -168,8 +169,6 @@
 		return teams		
 	}
 
-
-
 </script>
 
 {#if tourneyName}
@@ -199,8 +198,11 @@
 	{/if}
 </div>
 
-
-
+<div>
+	<a href="{window.location.origin + window.location.pathname + '?v=' + new Date().valueOf()}">🔄</a>
+</div>
+<br>
+<br>
 
 <style>
 	a:link {
