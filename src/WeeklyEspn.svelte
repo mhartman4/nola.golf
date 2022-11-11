@@ -37,8 +37,15 @@
     	const endpoint = `https://site.web.api.espn.com/apis/site/v2/sports/golf/leaderboard?league=` + leagueSlug
     	const response = await fetch(endpoint)
 		const json = await response.json()
+		// console.log(json)
 
-		var dateDiff = Math.floor((new Date() - Date.parse(json.events[0].endDate)) / (1000*60*60*24))
+		if (json.events.length == 0) {
+			var dateDiff = -100
+
+		}
+		else {
+			var dateDiff = Math.floor((new Date() - Date.parse(json.events[0].endDate)) / (1000*60*60*24))
+		}	
 
 		if (dateDiff >= -4 && dateDiff <= 4) {
 			switch(leagueSlug) {

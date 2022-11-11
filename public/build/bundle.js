@@ -9090,7 +9090,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (176:0) {:else}
+    // (183:0) {:else}
     function create_else_block_1(ctx) {
     	let img;
     	let img_src_value;
@@ -9104,8 +9104,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$7, 176, 1, 5579);
-    			add_location(span, file$7, 176, 127, 5705);
+    			add_location(img, file$7, 183, 1, 5678);
+    			add_location(span, file$7, 183, 127, 5804);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -9122,14 +9122,14 @@ var app = (function () {
     		block,
     		id: create_else_block_1.name,
     		type: "else",
-    		source: "(176:0) {:else}",
+    		source: "(183:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (174:0) {#if tourneyName}
+    // (181:0) {#if tourneyName}
     function create_if_block_4(ctx) {
     	let h1;
     	let t;
@@ -9139,7 +9139,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*tourneyName*/ ctx[1]);
     			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
-    			add_location(h1, file$7, 174, 1, 5526);
+    			add_location(h1, file$7, 181, 1, 5625);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9157,14 +9157,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(174:0) {#if tourneyName}",
+    		source: "(181:0) {#if tourneyName}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (179:0) {#if livTourneyName}
+    // (186:0) {#if livTourneyName}
     function create_if_block_3(ctx) {
     	let h1;
     	let t;
@@ -9174,7 +9174,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*livTourneyName*/ ctx[2]);
     			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
-    			add_location(h1, file$7, 178, 20, 5777);
+    			add_location(h1, file$7, 185, 20, 5876);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9192,14 +9192,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(179:0) {#if livTourneyName}",
+    		source: "(186:0) {#if livTourneyName}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (180:0) {#if eurTourneyName}
+    // (187:0) {#if eurTourneyName}
     function create_if_block_2$1(ctx) {
     	let h1;
     	let t;
@@ -9209,7 +9209,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*eurTourneyName*/ ctx[3]);
     			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
-    			add_location(h1, file$7, 179, 20, 5853);
+    			add_location(h1, file$7, 186, 20, 5952);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9227,14 +9227,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$1.name,
     		type: "if",
-    		source: "(180:0) {#if eurTourneyName}",
+    		source: "(187:0) {#if eurTourneyName}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (196:1) {:else}
+    // (203:1) {:else}
     function create_else_block$2(ctx) {
     	let img;
     	let img_src_value;
@@ -9248,8 +9248,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$7, 196, 2, 6286);
-    			add_location(span, file$7, 196, 81, 6365);
+    			add_location(img, file$7, 203, 2, 6385);
+    			add_location(span, file$7, 203, 81, 6464);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -9268,14 +9268,14 @@ var app = (function () {
     		block,
     		id: create_else_block$2.name,
     		type: "else",
-    		source: "(196:1) {:else}",
+    		source: "(203:1) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (192:17) 
+    // (199:17) 
     function create_if_block_1$2(ctx) {
     	let div;
     	let code;
@@ -9290,9 +9290,9 @@ var app = (function () {
     			t0 = text("🚨 ");
     			t1 = text(/*error*/ ctx[4]);
     			t2 = text(" 🚨");
-    			add_location(code, file$7, 193, 3, 6239);
+    			add_location(code, file$7, 200, 3, 6338);
     			attr_dev(div, "class", "error svelte-ih46r3");
-    			add_location(div, file$7, 192, 2, 6216);
+    			add_location(div, file$7, 199, 2, 6315);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -9315,14 +9315,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(192:17) ",
+    		source: "(199:17) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (182:1) {#if teams}
+    // (189:1) {#if teams}
     function create_if_block$5(ctx) {
     	let each_1_anchor;
     	let current;
@@ -9411,14 +9411,14 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(182:1) {#if teams}",
+    		source: "(189:1) {#if teams}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (183:2) {#each teams as team, i}
+    // (190:2) {#each teams as team, i}
     function create_each_block$4(ctx) {
     	let table;
     	let tr;
@@ -9444,12 +9444,12 @@ var app = (function () {
     			td = element("td");
     			create_component(team.$$.fragment);
     			t = space();
-    			add_location(td, file$7, 185, 5, 6031);
-    			add_location(tr, file$7, 184, 4, 6021);
+    			add_location(td, file$7, 192, 5, 6130);
+    			add_location(tr, file$7, 191, 4, 6120);
     			attr_dev(table, "class", "team svelte-ih46r3");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$7, 183, 3, 5972);
+    			add_location(table, file$7, 190, 3, 6071);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -9484,7 +9484,7 @@ var app = (function () {
     		block,
     		id: create_each_block$4.name,
     		type: "each",
-    		source: "(183:2) {#each teams as team, i}",
+    		source: "(190:2) {#each teams as team, i}",
     		ctx
     	});
 
@@ -9548,13 +9548,13 @@ var app = (function () {
     			t6 = space();
     			br1 = element("br");
     			attr_dev(div0, "class", "teams");
-    			add_location(div0, file$7, 180, 0, 5909);
+    			add_location(div0, file$7, 187, 0, 6008);
     			attr_dev(a, "href", window.location.origin + window.location.pathname + '?v=' + new Date().valueOf());
     			attr_dev(a, "class", "svelte-ih46r3");
-    			add_location(a, file$7, 201, 1, 6420);
-    			add_location(div1, file$7, 200, 0, 6413);
-    			add_location(br0, file$7, 203, 0, 6527);
-    			add_location(br1, file$7, 204, 0, 6532);
+    			add_location(a, file$7, 208, 1, 6519);
+    			add_location(div1, file$7, 207, 0, 6512);
+    			add_location(br0, file$7, 210, 0, 6626);
+    			add_location(br1, file$7, 211, 0, 6631);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9721,7 +9721,13 @@ var app = (function () {
     		const endpoint = `https://site.web.api.espn.com/apis/site/v2/sports/golf/leaderboard?league=` + leagueSlug;
     		const response = await fetch(endpoint);
     		const json = await response.json();
-    		var dateDiff = Math.floor((new Date() - Date.parse(json.events[0].endDate)) / (1000 * 60 * 60 * 24));
+
+    		// console.log(json)
+    		if (json.events.length == 0) {
+    			var dateDiff = -100;
+    		} else {
+    			var dateDiff = Math.floor((new Date() - Date.parse(json.events[0].endDate)) / (1000 * 60 * 60 * 24));
+    		}
 
     		if (dateDiff >= -4 && dateDiff <= 4) {
     			switch (leagueSlug) {
