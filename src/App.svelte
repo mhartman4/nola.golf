@@ -9,7 +9,7 @@
 	import { onMount } from "svelte"
   	let pages = ["Weekly","Overall"]
 	let currentPage = "Weekly"
-	let confidencePool = window.location.href.includes("?confidence=")
+	let confidencePool = window.location.href.includes("?confidence")
 
 </script>
 

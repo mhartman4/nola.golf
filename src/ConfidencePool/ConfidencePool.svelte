@@ -2,10 +2,7 @@
 	import { onMount } from "svelte"
 	import Pick from "./Pick.svelte"
 	import Entry from "./Entry.svelte"
-	let cavs = window.location.href.includes("?confidence=cle")
-	let pels = window.location.href.includes("?confidence=pels")
-	let franchise = cavs ? "The Cavs" : "The 'Cans"
-	let spreadsheet_id = pels ? "1ciYHM-Aan8auuuep--A90OaGKEAaMnkoqrH4ccXppRI" : "1N2tavjuLDneq5F9wpYvBMamWxJLKVUXV1Nv1__hKc5M"
+	let spreadsheet_id = "1ciYHM-Aan8auuuep--A90OaGKEAaMnkoqrH4ccXppRI"
 
 	let picks,standings
 
@@ -29,7 +26,7 @@
 	const getPicks = async () => {
 		
 		// Pels' / Cavs picks gid
-		let gid = pels ? "1752659247" : "1752659247"
+		let gid = "1752659247"
 		
 		
 		let endpoint = `https://docs.google.com/spreadsheets/d/`+ spreadsheet_id + `/gviz/tq?tqx=out:json&tq&gid=` + gid
@@ -56,7 +53,7 @@
 	const getStandings = async () => {
 		
 		// Pels' standings gid
-		let gid = pels ? "1314441307" : "1314441307"
+		let gid = "1314441307"
 		
 		let endpoint = `https://docs.google.com/spreadsheets/d/`+ spreadsheet_id + `/gviz/tq?tqx=out:json&tq&gid=` + gid
 
@@ -82,9 +79,8 @@
 	}
 </script>
 
-<a href="/public/?confidence={pels ? 'cle' : 'pels'}">
-	<h1>{franchise} Confidence Pool</h1>
-</a>
+
+<h1>'Cans Confidence Pool</h1>
 <!-- <code>{JSON.stringify(standings)}</code> -->
 {#if standings && picks}
 	{#each standings as entry, i}

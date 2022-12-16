@@ -12099,12 +12099,12 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[8] = list[i];
-    	child_ctx[10] = i;
+    	child_ctx[5] = list[i];
+    	child_ctx[7] = i;
     	return child_ctx;
     }
 
-    // (89:0) {#if standings && picks}
+    // (85:0) {#if standings && picks}
     function create_if_block$1(ctx) {
     	let each_1_anchor;
     	let current;
@@ -12193,14 +12193,14 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(89:0) {#if standings && picks}",
+    		source: "(85:0) {#if standings && picks}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (90:1) {#each standings as entry, i}
+    // (86:1) {#each standings as entry, i}
     function create_each_block(ctx) {
     	let table;
     	let tr;
@@ -12211,11 +12211,11 @@ var app = (function () {
 
     	entry = new Entry({
     			props: {
-    				entry: /*entry*/ ctx[8]['Entry'],
-    				placenumber: /*i*/ ctx[10] + 1,
-    				pointswon: /*entry*/ ctx[8]['Points Won'],
-    				pointsremaining: /*entry*/ ctx[8]['Points Remaining'],
-    				picks: /*entry*/ ctx[8]['Picks']
+    				entry: /*entry*/ ctx[5]['Entry'],
+    				placenumber: /*i*/ ctx[7] + 1,
+    				pointswon: /*entry*/ ctx[5]['Points Won'],
+    				pointsremaining: /*entry*/ ctx[5]['Points Remaining'],
+    				picks: /*entry*/ ctx[5]['Picks']
     			},
     			$$inline: true
     		});
@@ -12227,12 +12227,12 @@ var app = (function () {
     			td = element("td");
     			create_component(entry.$$.fragment);
     			t = space();
-    			add_location(td, file$1, 92, 4, 2411);
-    			add_location(tr, file$1, 91, 3, 2402);
+    			add_location(td, file$1, 88, 4, 2073);
+    			add_location(tr, file$1, 87, 3, 2064);
     			attr_dev(table, "class", "team svelte-yqzzuz");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$1, 90, 2, 2354);
+    			add_location(table, file$1, 86, 2, 2016);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -12244,10 +12244,10 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const entry_changes = {};
-    			if (dirty & /*standings*/ 2) entry_changes.entry = /*entry*/ ctx[8]['Entry'];
-    			if (dirty & /*standings*/ 2) entry_changes.pointswon = /*entry*/ ctx[8]['Points Won'];
-    			if (dirty & /*standings*/ 2) entry_changes.pointsremaining = /*entry*/ ctx[8]['Points Remaining'];
-    			if (dirty & /*standings*/ 2) entry_changes.picks = /*entry*/ ctx[8]['Picks'];
+    			if (dirty & /*standings*/ 2) entry_changes.entry = /*entry*/ ctx[5]['Entry'];
+    			if (dirty & /*standings*/ 2) entry_changes.pointswon = /*entry*/ ctx[5]['Points Won'];
+    			if (dirty & /*standings*/ 2) entry_changes.pointsremaining = /*entry*/ ctx[5]['Points Remaining'];
+    			if (dirty & /*standings*/ 2) entry_changes.picks = /*entry*/ ctx[5]['Picks'];
     			entry.$set(entry_changes);
     		},
     		i: function intro(local) {
@@ -12269,7 +12269,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(90:1) {#each standings as entry, i}",
+    		source: "(86:1) {#each standings as entry, i}",
     		ctx
     	});
 
@@ -12277,34 +12277,28 @@ var app = (function () {
     }
 
     function create_fragment$1(ctx) {
-    	let a;
     	let h1;
-    	let t2;
+    	let t1;
     	let if_block_anchor;
     	let current;
     	let if_block = /*standings*/ ctx[1] && /*picks*/ ctx[0] && create_if_block$1(ctx);
 
     	const block = {
     		c: function create() {
-    			a = element("a");
     			h1 = element("h1");
-    			h1.textContent = `${/*franchise*/ ctx[3]} Confidence Pool`;
-    			t2 = space();
+    			h1.textContent = "'Cans Confidence Pool";
+    			t1 = space();
     			if (if_block) if_block.c();
     			if_block_anchor = empty();
     			attr_dev(h1, "class", "svelte-yqzzuz");
-    			add_location(h1, file$1, 85, 1, 2204);
-    			attr_dev(a, "href", "/public/?confidence=" + (/*pels*/ ctx[2] ? 'cle' : 'pels'));
-    			attr_dev(a, "class", "svelte-yqzzuz");
-    			add_location(a, file$1, 84, 0, 2148);
+    			add_location(h1, file$1, 82, 0, 1877);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, a, anchor);
-    			append_dev(a, h1);
-    			insert_dev(target, t2, anchor);
+    			insert_dev(target, h1, anchor);
+    			insert_dev(target, t1, anchor);
     			if (if_block) if_block.m(target, anchor);
     			insert_dev(target, if_block_anchor, anchor);
     			current = true;
@@ -12343,8 +12337,8 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(a);
-    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(h1);
+    			if (detaching) detach_dev(t1);
     			if (if_block) if_block.d(detaching);
     			if (detaching) detach_dev(if_block_anchor);
     		}
@@ -12364,14 +12358,7 @@ var app = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('ConfidencePool', slots, []);
-    	let cavs = window.location.href.includes("?confidence=cle");
-    	let pels = window.location.href.includes("?confidence=pels");
-    	let franchise = cavs ? "The Cavs" : "The 'Cans";
-
-    	let spreadsheet_id = pels
-    	? "1ciYHM-Aan8auuuep--A90OaGKEAaMnkoqrH4ccXppRI"
-    	: "1N2tavjuLDneq5F9wpYvBMamWxJLKVUXV1Nv1__hKc5M";
-
+    	let spreadsheet_id = "1ciYHM-Aan8auuuep--A90OaGKEAaMnkoqrH4ccXppRI";
     	let picks, standings;
 
     	onMount(async () => {
@@ -12389,7 +12376,7 @@ var app = (function () {
 
     	const getPicks = async () => {
     		// Pels' / Cavs picks gid
-    		let gid = pels ? "1752659247" : "1752659247";
+    		let gid = "1752659247";
 
     		let endpoint = `https://docs.google.com/spreadsheets/d/` + spreadsheet_id + `/gviz/tq?tqx=out:json&tq&gid=` + gid;
     		const response = await fetch(endpoint);
@@ -12417,7 +12404,7 @@ var app = (function () {
 
     	const getStandings = async () => {
     		// Pels' standings gid
-    		let gid = pels ? "1314441307" : "1314441307";
+    		let gid = "1314441307";
 
     		let endpoint = `https://docs.google.com/spreadsheets/d/` + spreadsheet_id + `/gviz/tq?tqx=out:json&tq&gid=` + gid;
     		const response = await fetch(endpoint);
@@ -12455,9 +12442,6 @@ var app = (function () {
     		onMount,
     		Pick,
     		Entry,
-    		cavs,
-    		pels,
-    		franchise,
     		spreadsheet_id,
     		picks,
     		standings,
@@ -12466,9 +12450,6 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('cavs' in $$props) cavs = $$props.cavs;
-    		if ('pels' in $$props) $$invalidate(2, pels = $$props.pels);
-    		if ('franchise' in $$props) $$invalidate(3, franchise = $$props.franchise);
     		if ('spreadsheet_id' in $$props) spreadsheet_id = $$props.spreadsheet_id;
     		if ('picks' in $$props) $$invalidate(0, picks = $$props.picks);
     		if ('standings' in $$props) $$invalidate(1, standings = $$props.standings);
@@ -12478,7 +12459,7 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [picks, standings, pels, franchise];
+    	return [picks, standings];
     }
 
     class ConfidencePool extends SvelteComponentDev {
@@ -12545,11 +12526,11 @@ var app = (function () {
     			br1 = element("br");
     			t1 = space();
     			if (if_block) if_block.c();
-    			add_location(br0, file, 22, 2, 610);
-    			add_location(br1, file, 22, 6, 614);
+    			add_location(br0, file, 22, 2, 609);
+    			add_location(br1, file, 22, 6, 613);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 20, 1, 535);
+    			add_location(div, file, 20, 1, 534);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -12649,7 +12630,7 @@ var app = (function () {
     			create_component(confidencepool.$$.fragment);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 16, 1, 481);
+    			add_location(div, file, 16, 1, 480);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -12824,7 +12805,7 @@ var app = (function () {
     	validate_slots('App', slots, []);
     	let pages = ["Weekly", "Overall"];
     	let currentPage = "Weekly";
-    	let confidencePool = window.location.href.includes("?confidence=");
+    	let confidencePool = window.location.href.includes("?confidence");
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
