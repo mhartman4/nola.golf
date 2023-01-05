@@ -1,5 +1,3 @@
-
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -11328,7 +11326,7 @@ var app = (function () {
     			? 'pickwon'
     			: /*pick*/ ctx[11]['Points Lost'] > 0 ? 'picklost' : '') + "" + " svelte-h0ildf");
 
-    			add_location(span, file$2, 45, 8, 1488);
+    			add_location(span, file$2, 45, 8, 1485);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11498,16 +11496,16 @@ var app = (function () {
     			}
 
     			attr_dev(th0, "class", "roster-header svelte-h0ildf");
-    			add_location(th0, file$2, 60, 7, 1822);
+    			add_location(th0, file$2, 60, 7, 1819);
     			attr_dev(th1, "class", "roster-header svelte-h0ildf");
-    			add_location(th1, file$2, 61, 19, 1877);
-    			add_location(tr, file$2, 59, 6, 1810);
-    			add_location(thead, file$2, 58, 5, 1796);
-    			add_location(tbody, file$2, 64, 5, 1945);
+    			add_location(th1, file$2, 61, 19, 1874);
+    			add_location(tr, file$2, 59, 6, 1807);
+    			add_location(thead, file$2, 58, 5, 1793);
+    			add_location(tbody, file$2, 64, 5, 1942);
     			attr_dev(table, "class", "roster-table svelte-h0ildf");
-    			add_location(table, file$2, 57, 4, 1762);
+    			add_location(table, file$2, 57, 4, 1759);
     			attr_dev(div, "class", "roster svelte-h0ildf");
-    			add_location(div, file$2, 56, 3, 1720);
+    			add_location(div, file$2, 56, 3, 1717);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -11731,30 +11729,30 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(td0, "class", "standings-place-number svelte-h0ildf");
     			attr_dev(td0, "width", "20");
-    			add_location(td0, file$2, 28, 6, 894);
+    			add_location(td0, file$2, 28, 6, 891);
     			attr_dev(div0, "class", "owner svelte-h0ildf");
-    			add_location(div0, file$2, 31, 7, 1013);
+    			add_location(div0, file$2, 31, 7, 1010);
     			attr_dev(td1, "class", "team-name svelte-h0ildf");
-    			add_location(td1, file$2, 29, 6, 965);
+    			add_location(td1, file$2, 29, 6, 962);
     			attr_dev(span0, "class", "pointswon svelte-h0ildf");
-    			add_location(span0, file$2, 34, 7, 1090);
+    			add_location(span0, file$2, 34, 7, 1087);
     			attr_dev(span1, "class", "pointsremaining svelte-h0ildf");
-    			add_location(span1, file$2, 35, 7, 1144);
+    			add_location(span1, file$2, 35, 7, 1141);
     			attr_dev(td2, "align", "right");
-    			add_location(td2, file$2, 33, 6, 1064);
-    			add_location(tr, file$2, 27, 5, 883);
-    			add_location(tbody, file$2, 26, 4, 870);
+    			add_location(td2, file$2, 33, 6, 1061);
+    			add_location(tr, file$2, 27, 5, 880);
+    			add_location(tbody, file$2, 26, 4, 867);
     			attr_dev(table, "border", "0");
     			attr_dev(table, "width", "100%");
-    			add_location(table, file$2, 25, 3, 834);
+    			add_location(table, file$2, 25, 3, 831);
     			attr_dev(div1, "class", "point-picks svelte-h0ildf");
-    			add_location(div1, file$2, 41, 3, 1350);
+    			add_location(div1, file$2, 41, 3, 1347);
     			attr_dev(div2, "class", "header svelte-h0ildf");
-    			add_location(div2, file$2, 24, 2, 810);
+    			add_location(div2, file$2, 24, 2, 807);
     			attr_dev(div3, "class", "team svelte-h0ildf");
-    			add_location(div3, file$2, 23, 1, 766);
+    			add_location(div3, file$2, 23, 1, 763);
     			attr_dev(div4, "class", "team svelte-h0ildf");
-    			add_location(div4, file$2, 22, 0, 746);
+    			add_location(div4, file$2, 22, 0, 743);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -11929,8 +11927,7 @@ var app = (function () {
     		39,
     		40,
     		41,
-    		42,
-    		43
+    		42
     	];
 
     	let picks_no_champs = picks.filter((element, index) => index < picks.length - 1);
