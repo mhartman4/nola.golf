@@ -1373,7 +1373,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "golfer-count pga svelte-g5jadf");
-    			add_location(span, file$a, 43, 8, 1282);
+    			add_location(span, file$a, 43, 8, 1490);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -1409,7 +1409,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "golfer-count liv svelte-g5jadf");
-    			add_location(span, file$a, 46, 8, 1412);
+    			add_location(span, file$a, 46, 8, 1620);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -1445,7 +1445,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "golfer-count eur svelte-g5jadf");
-    			add_location(span, file$a, 49, 8, 1542);
+    			add_location(span, file$a, 49, 8, 1750);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -1593,30 +1593,30 @@ var app = (function () {
     			if (if_block3) if_block3.c();
     			attr_dev(td0, "class", "standings-place-number svelte-g5jadf");
     			attr_dev(td0, "width", "15");
-    			add_location(td0, file$a, 33, 5, 895);
+    			add_location(td0, file$a, 33, 5, 954);
     			attr_dev(img, "class", "player-photo svelte-g5jadf");
-    			if (!src_url_equal(img.src, img_src_value = /*pictureUrl*/ ctx[5])) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = "https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_" + /*team*/ ctx[0].roster[0].id + ".png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "width", "45");
     			attr_dev(img, "height", "45");
-    			add_location(img, file$a, 35, 6, 987);
+    			add_location(img, file$a, 35, 6, 1046);
     			attr_dev(td1, "width", "55");
-    			add_location(td1, file$a, 34, 5, 965);
-    			attr_dev(div0, "class", "owner " + (/*dvLeague*/ ctx[6] ? " invisible" : "") + " svelte-g5jadf");
-    			add_location(div0, file$a, 41, 6, 1157);
+    			add_location(td1, file$a, 34, 5, 1024);
+    			attr_dev(div0, "class", "owner " + (/*dvLeague*/ ctx[5] ? " invisible" : "") + " svelte-g5jadf");
+    			add_location(div0, file$a, 41, 6, 1365);
     			attr_dev(td2, "class", td2_class_value = "team-name " + (/*isFavorite*/ ctx[2] ? " favorite" : "") + " svelte-g5jadf");
-    			add_location(td2, file$a, 38, 5, 1073);
-    			add_location(br, file$a, 55, 47, 1763);
+    			add_location(td2, file$a, 38, 5, 1281);
+    			add_location(br, file$a, 55, 47, 1971);
     			attr_dev(td3, "class", td3_class_value = "team-earnings " + (/*isFavorite*/ ctx[2] ? " favorite" : "") + " svelte-g5jadf");
-    			add_location(td3, file$a, 54, 5, 1657);
-    			add_location(tr, file$a, 32, 4, 885);
-    			add_location(tbody, file$a, 31, 3, 873);
+    			add_location(td3, file$a, 54, 5, 1865);
+    			add_location(tr, file$a, 32, 4, 944);
+    			add_location(tbody, file$a, 31, 3, 932);
     			attr_dev(table, "border", "0");
     			attr_dev(table, "width", "100%");
-    			add_location(table, file$a, 30, 2, 838);
+    			add_location(table, file$a, 30, 2, 897);
     			attr_dev(div1, "class", "header svelte-g5jadf");
-    			add_location(div1, file$a, 29, 1, 791);
+    			add_location(div1, file$a, 29, 1, 850);
     			attr_dev(div2, "class", "team");
-    			add_location(div2, file$a, 28, 0, 771);
+    			add_location(div2, file$a, 28, 0, 830);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1653,12 +1653,17 @@ var app = (function () {
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(div1, "click", /*toggleRoster*/ ctx[7], false, false, false);
+    				dispose = listen_dev(div1, "click", /*toggleRoster*/ ctx[6], false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
     			if (!current || dirty & /*placeNumber*/ 2) set_data_dev(t0, /*placeNumber*/ ctx[1]);
+
+    			if (!current || dirty & /*team*/ 1 && !src_url_equal(img.src, img_src_value = "https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_" + /*team*/ ctx[0].roster[0].id + ".png")) {
+    				attr_dev(img, "src", img_src_value);
+    			}
+
     			if ((!current || dirty & /*team*/ 1) && t3_value !== (t3_value = /*team*/ ctx[0].teamName + "")) set_data_dev(t3, t3_value);
     			if ((!current || dirty & /*team*/ 1) && t5_value !== (t5_value = /*team*/ ctx[0].owner + "")) set_data_dev(t5, t5_value);
 
@@ -1769,13 +1774,14 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Team', slots, []);
     	let { team, placeNumber, isFavorite, activeGolferCounts } = $$props;
+    	team.roster = team.roster.sort((a, b) => b.sort - a.sort);
 
     	// let teamName = team.name
     	// let teamNameNoOwner = team.teamName
     	// let owner = team.owner
-    	let pictureUrl = "https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_" + team.roster[0].id + ".png";
-
+    	// let pictureUrl = "https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_" + team.roster[0].id + ".png"
     	let rosterVisible = false;
+
     	let dvLeague = window.location.href.includes("?league=dv");
 
     	function toggleRoster() {
@@ -1803,7 +1809,6 @@ var app = (function () {
     		placeNumber,
     		isFavorite,
     		activeGolferCounts,
-    		pictureUrl,
     		rosterVisible,
     		dvLeague,
     		toggleRoster
@@ -1814,9 +1819,8 @@ var app = (function () {
     		if ('placeNumber' in $$props) $$invalidate(1, placeNumber = $$props.placeNumber);
     		if ('isFavorite' in $$props) $$invalidate(2, isFavorite = $$props.isFavorite);
     		if ('activeGolferCounts' in $$props) $$invalidate(3, activeGolferCounts = $$props.activeGolferCounts);
-    		if ('pictureUrl' in $$props) $$invalidate(5, pictureUrl = $$props.pictureUrl);
     		if ('rosterVisible' in $$props) $$invalidate(4, rosterVisible = $$props.rosterVisible);
-    		if ('dvLeague' in $$props) $$invalidate(6, dvLeague = $$props.dvLeague);
+    		if ('dvLeague' in $$props) $$invalidate(5, dvLeague = $$props.dvLeague);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -1829,7 +1833,6 @@ var app = (function () {
     		isFavorite,
     		activeGolferCounts,
     		rosterVisible,
-    		pictureUrl,
     		dvLeague,
     		toggleRoster
     	];
@@ -9102,8 +9105,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$7, 183, 1, 5678);
-    			add_location(span, file$7, 183, 127, 5804);
+    			add_location(img, file$7, 183, 1, 5715);
+    			add_location(span, file$7, 183, 127, 5841);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -9137,7 +9140,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*tourneyName*/ ctx[1]);
     			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
-    			add_location(h1, file$7, 181, 1, 5625);
+    			add_location(h1, file$7, 181, 1, 5662);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9172,7 +9175,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*livTourneyName*/ ctx[2]);
     			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
-    			add_location(h1, file$7, 185, 20, 5876);
+    			add_location(h1, file$7, 185, 20, 5913);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9207,7 +9210,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*eurTourneyName*/ ctx[3]);
     			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
-    			add_location(h1, file$7, 186, 20, 5952);
+    			add_location(h1, file$7, 186, 20, 5989);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -9246,8 +9249,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$7, 203, 2, 6385);
-    			add_location(span, file$7, 203, 81, 6464);
+    			add_location(img, file$7, 203, 2, 6422);
+    			add_location(span, file$7, 203, 81, 6501);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -9288,9 +9291,9 @@ var app = (function () {
     			t0 = text("🚨 ");
     			t1 = text(/*error*/ ctx[4]);
     			t2 = text(" 🚨");
-    			add_location(code, file$7, 200, 3, 6338);
+    			add_location(code, file$7, 200, 3, 6375);
     			attr_dev(div, "class", "error svelte-ih46r3");
-    			add_location(div, file$7, 199, 2, 6315);
+    			add_location(div, file$7, 199, 2, 6352);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -9442,12 +9445,12 @@ var app = (function () {
     			td = element("td");
     			create_component(team.$$.fragment);
     			t = space();
-    			add_location(td, file$7, 192, 5, 6130);
-    			add_location(tr, file$7, 191, 4, 6120);
+    			add_location(td, file$7, 192, 5, 6167);
+    			add_location(tr, file$7, 191, 4, 6157);
     			attr_dev(table, "class", "team svelte-ih46r3");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$7, 190, 3, 6071);
+    			add_location(table, file$7, 190, 3, 6108);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -9546,13 +9549,13 @@ var app = (function () {
     			t6 = space();
     			br1 = element("br");
     			attr_dev(div0, "class", "teams");
-    			add_location(div0, file$7, 187, 0, 6008);
+    			add_location(div0, file$7, 187, 0, 6045);
     			attr_dev(a, "href", window.location.origin + window.location.pathname + '?v=' + new Date().valueOf());
     			attr_dev(a, "class", "svelte-ih46r3");
-    			add_location(a, file$7, 208, 1, 6519);
-    			add_location(div1, file$7, 207, 0, 6512);
-    			add_location(br0, file$7, 210, 0, 6626);
-    			add_location(br1, file$7, 211, 0, 6631);
+    			add_location(a, file$7, 208, 1, 6556);
+    			add_location(div1, file$7, 207, 0, 6549);
+    			add_location(br0, file$7, 210, 0, 6663);
+    			add_location(br1, file$7, 211, 0, 6668);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9721,7 +9724,7 @@ var app = (function () {
     		const json = await response.json();
 
     		// console.log(json)
-    		if (json.events.length == 0) {
+    		if (json.events.length == 0 || json.events[0].name == "Hero Cup") {
     			var dateDiff = -100;
     		} else {
     			var dateDiff = Math.floor((new Date() - Date.parse(json.events[0].endDate)) / (1000 * 60 * 60 * 24));
@@ -12856,6 +12859,26 @@ var app = (function () {
     var app = new App({
     	target: document.body
     });
+
+    function at(n) {
+        // ToInteger() abstract op
+        n = Math.trunc(n) || 0;
+        // Allow negative indexing from the end
+        if (n < 0) n += this.length;
+        // OOB access is guaranteed to return undefined
+        if (n < 0 || n >= this.length) return undefined;
+        // Otherwise, this is just normal property access
+        return this[n];
+    }
+
+    const TypedArray = Reflect.getPrototypeOf(Int8Array);
+    for (const C of [Array, String, TypedArray]) {
+        Object.defineProperty(C.prototype, "at",
+                              { value: at,
+                                writable: true,
+                                enumerable: false,
+                                configurable: true });
+    }
 
     return app;
 
