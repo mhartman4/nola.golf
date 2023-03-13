@@ -6,16 +6,21 @@
 	import WeeklyEspn from "./WeeklyEspn.svelte"
 	import Overall from "./Overall.svelte"
 	import ConfidencePool from "./ConfidencePool/ConfidencePool.svelte"
+	import Nba from "./NBA/Nba.svelte"
 	import { onMount } from "svelte"
   	let pages = ["Weekly","Overall"]
 	let currentPage = "Weekly"
 	let confidencePool = window.location.href.includes("?confidence")
-
+	let nbaPage = window.location.href.includes("?nba")
 </script>
 
 {#if confidencePool}
 	<div id="main">
 		<ConfidencePool />
+	</div>
+{:else if nbaPage}
+	<div id="main">
+		<Nba />
 	</div>
 {:else}
 	<div id="main">
