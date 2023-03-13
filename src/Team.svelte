@@ -1,12 +1,12 @@
 <script>
 	import Roster from "./Roster.svelte"
 	export let team, placeNumber, isFavorite, activeGolferCounts
-	
+	team.roster = team.roster.sort((a,b) => b.sort - a.sort)
 	// let teamName = team.name
 	// let teamNameNoOwner = team.teamName
 	// let owner = team.owner
 	
-	let pictureUrl = "https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_" + team.roster[0].id + ".png"
+	// let pictureUrl = "https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_" + team.roster[0].id + ".png"
     let rosterVisible = false
     let dvLeague = window.location.href.includes("?league=dv")
 
@@ -33,7 +33,7 @@
 				<tr>
 					<td class="standings-place-number" width="15">{placeNumber}</td>
 					<td width="55">
-						<img class="player-photo" src="{pictureUrl}" width="45" height="45">
+						<img class="player-photo" src="https://pga-tour-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,h_45,q_auto,t_headshots_leaderboard_l,w_45/headshots_{team.roster[0].id}.png" width="45" height="45">
 					</td>
 
 					<td class="team-name {isFavorite ? " favorite" : ""}">

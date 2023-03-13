@@ -39,7 +39,7 @@
 		const json = await response.json()
 		// console.log(json)
 
-		if (json.events.length == 0) {
+		if (json.events.length == 0 || json.events[0].name == "Hero Cup") {
 			var dateDiff = -100
 
 		}
