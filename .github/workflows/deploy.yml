@@ -19,8 +19,8 @@ jobs:
           invalidation: /
           delete-removed: true
           no-cache: true
-          private: true
-          files-to-include: ".*/*,*/*,**"
+          private: false
+          files-to-include: "*"
       - name: Send Slack message
         uses: craftech-io/slack-action@v1
         with:
