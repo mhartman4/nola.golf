@@ -1,7 +1,7 @@
 # 🏌 Golf League Svelte App 🏌
 
-## Github Actions Deployment Status
-https://github.com/mhartman4/nola.golf/actions/workflows/deploy.yml/badge.svg
+## Deploy Status
+![example workflow](https://github.com/mhartman4/nola.golf/actions/workflows/deploy.yml/badge.svg)
 
 ## Developing
 
