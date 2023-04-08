@@ -90,6 +90,12 @@
 
 					if (matches.length > 0) {
 						const golfer = matches[0]
+						
+						golfer.statistics.forEach(s => {
+							if (s.name == "scoreToPar") {
+								player.total = s.displayValue
+							}
+						})
 						player.isPlaying = true
 						player.position = golfer.status.position.displayName
 						player.projMoney = golfer.estimatedEarnings
@@ -98,7 +104,7 @@
 						}
 
 						player.pgaStatus = golfer.status.shortDetail
-						player.total = golfer.score.displayValue
+						// player.total = golfer.score.displayValue
 						player.today = golfer.linescores.at(-1).displayValue					
 						player.thru = golfer.status.thru
 						player.league = leagueSlug
