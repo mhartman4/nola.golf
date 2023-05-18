@@ -67,14 +67,15 @@
 			})
 			
 			var purse = json.events[0].purse ? json.events[0].purse : 15000000
+			
 			var payoutPercentages = [null, 0.18,0.109,0.069,0.049,0.041,0.03625,0.03375,0.03125,0.02925,0.02725,0.02525,0.02325,0.02125,0.01925,0.01825,0.01725,0.01625,0.01525,0.01425,0.01325,0.01225,0.01125,0.01045,0.00965,0.00885,0.00805,0.00775,0.00745,0.00715,0.00685,0.00655,0.00625,0.00595,0.0057,0.00545,0.0052,0.00495,0.00475,0.00455,0.00435,0.00415,0.00395,0.00375,0.00355,0.00335,0.00315,0.00295,0.00279,0.00265,0.00257,0.00251,0.00245,0.00241,0.00237,0.00235,0.00233,0.00231,0.00229,0.00227,0.00225,0.00223,0.00221,0.00219,0.00217,0.00215]
 			const livPayoutPercentages = [null, 0.20000,0.10625,0.07500,0.05250,0.04875,0.04000,0.03375,0.03125,0.02900,0.02800,0.02700,0.02250,0.01800,0.01350,0.01250,0.01200,0.01160,0.01130,0.01100,0.01000,0.00900,0.00860,0.00850,0.00840,0.00830,0.00820,0.00810,0.00800,0.00790,0.00780,0.00770,0.00760,0.00750,0.00740,0.00730,0.00720,0.00710,0.00700,0.00690,0.00680,0.00670,0.00660,0.00650,0.00640,0.00630,0.00620,0.00610,0.00600]
 			golfers.forEach((g) => {
 				if (leagueSlug == "liv") {
-					g.estimatedEarnings = livPayoutPercentages[g.status.position.id] * purse * 0.27
+					g.estimatedEarnings = livPayoutPercentages[Number(g.status.position.id)] * purse * 0.27
 				}
 				else {
-					g.estimatedEarnings = payoutPercentages[g.status.position.id] * purse 		
+					g.estimatedEarnings = payoutPercentages[Number(g.status.position.id)] * purse 		
 				}
 
 				if (isNaN(g.estimatedEarnings)) {
@@ -90,12 +91,6 @@
 
 					if (matches.length > 0) {
 						const golfer = matches[0]
-						
-						golfer.statistics.forEach(s => {
-							if (s.name == "scoreToPar") {
-								player.total = s.displayValue
-							}
-						})
 						player.isPlaying = true
 						player.position = golfer.status.position.displayName
 						player.projMoney = golfer.estimatedEarnings
@@ -104,7 +99,7 @@
 						}
 
 						player.pgaStatus = golfer.status.shortDetail
-						// player.total = golfer.score.displayValue
+						player.total = golfer.score.displayValue
 						player.today = golfer.linescores.at(-1).displayValue					
 						player.thru = golfer.status.thru
 						player.league = leagueSlug
@@ -127,7 +122,7 @@
 	const getTeamRosters = async () => {
 		
 		
-		let spreadsheet_id = "1c231M42E4NkKsIqpMdMGALBmW9S6GAuhdS5KWVB4F50"
+		let spreadsheet_id = "1kcbW82ADMtUqDsUomhyCciMaayj3rIkWjSGdQiezJNc"
 		let gid = "629583302"
 		
 				
@@ -183,9 +178,9 @@
 	}
 
 </script>
-
+<br>
 {#if tourneyName}
-	<h1 class="tourney-name">{tourneyName}</h1>
+	<h1 class="tourney-name">PGA Pool Projected Standings</h1>
 {:else}
 	<img class="sheets-icon" src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png" alt="Loading"><span>&nbsp;Loading current tournament</span>
 {/if}
@@ -197,7 +192,7 @@
 			<table class="team" width="100%" border="0">
 				<tr>
 					<td>
-						<Team team={team} placeNumber={i+1} isFavorite={false} activeGolferCounts={team.activeGolferCounts}></Team>	
+						<Team team={team} placeNumber={i+1} isFavorite={false} activeGolferCounts="TEST!"></Team>	
 					</td>
 				</tr>
 			</table>
@@ -212,7 +207,7 @@
 </div>
 
 <div>
-	<a href="{window.location.origin + window.location.pathname + '?v=' + new Date().valueOf()}">🔄</a>
+	<a href="{window.location.origin + window.location.pathname + '?masters&v=' + new Date().valueOf()}">🔄</a>
 </div>
 <br>
 <br>
