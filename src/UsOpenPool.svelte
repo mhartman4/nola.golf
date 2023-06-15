@@ -212,7 +212,7 @@
 </div>
 
 <div>
-	<a href="{window.location.origin + window.location.pathname + '?pga&v=' + new Date().valueOf()}">🔄</a>
+	<a href="{window.location.origin + window.location.pathname + '?usopen&v=' + new Date().valueOf()}">🔄</a>
 </div>
 <br>
 <br>

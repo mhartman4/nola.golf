@@ -15367,12 +15367,12 @@ var app = (function () {
     			add_location(br0, file$1, 185, 0, 5797);
     			attr_dev(div0, "class", "teams");
     			add_location(div0, file$1, 193, 0, 6219);
-    			attr_dev(a, "href", window.location.origin + window.location.pathname + '?pga&v=' + new Date().valueOf());
+    			attr_dev(a, "href", window.location.origin + window.location.pathname + '?usopen&v=' + new Date().valueOf());
     			attr_dev(a, "class", "svelte-ih46r3");
     			add_location(a, file$1, 214, 1, 6712);
     			add_location(div1, file$1, 213, 0, 6705);
-    			add_location(br1, file$1, 216, 0, 6823);
-    			add_location(br2, file$1, 217, 0, 6828);
+    			add_location(br1, file$1, 216, 0, 6826);
+    			add_location(br2, file$1, 217, 0, 6831);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
