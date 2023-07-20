@@ -10,6 +10,7 @@
 	import MastersPool from "./MastersPool.svelte"
 	import PgaPool from "./PgaPool.svelte"
 	import UsOpenPool from "./UsOpenPool.svelte"
+	import TheOpenPool from "./TheOpenPool.svelte"
 	import { onMount } from "svelte"
   	let pages = ["Weekly","Overall"]
 	let currentPage = "Weekly"
@@ -18,6 +19,7 @@
 	let mastersPool = window.location.href.includes("?masters")
 	let pgaPool = window.location.href.includes("?pga")
 	let usOpenPool = window.location.href.includes("?usopen")
+	let theOpenPool = window.location.href.includes("?theopen")
 </script>
 
 {#if confidencePool}
@@ -39,6 +41,10 @@
 {:else if usOpenPool}
 	<div id="main">
 		<UsOpenPool />
+	</div>
+{:else if theOpenPool}
+	<div id="main">
+		<TheOpenPool />
 	</div>
 {:else}
 	<div id="main">
