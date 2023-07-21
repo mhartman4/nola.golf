@@ -105,7 +105,11 @@
 
 						player.pgaStatus = golfer.status.shortDetail
 						// player.total = golfer.score.displayValue
-						player.today = golfer.linescores.at(-1).displayValue					
+						player.today = golfer.linescores.at(-1).displayValue
+						if (golfer.linescores.at(-1).value == 0)
+						{
+							player.today = moment(golfer.linescores.at(-1).teeTime).local().format('HH:mmA')
+						}					
 						player.thru = golfer.status.thru
 						player.league = leagueSlug
 						player.sort = golfer.estimatedEarnings
