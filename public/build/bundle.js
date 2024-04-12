@@ -764,7 +764,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$i(ctx) {
+    function create_fragment$h(ctx) {
     	let div;
     	let each_value = /*pages*/ ctx[1];
     	validate_each_argument(each_value);
@@ -830,7 +830,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$i.name,
+    		id: create_fragment$h.name,
     		type: "component",
     		source: "",
     		ctx
@@ -839,7 +839,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$i($$self, $$props, $$invalidate) {
+    function instance$h($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Picker', slots, []);
     	let { pages = [] } = $$props;
@@ -887,13 +887,13 @@ var app = (function () {
     class Picker extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$i, create_fragment$i, safe_not_equal, { pages: 1, activePage: 0 });
+    		init(this, options, instance$h, create_fragment$h, safe_not_equal, { pages: 1, activePage: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Picker",
     			options,
-    			id: create_fragment$i.name
+    			id: create_fragment$h.name
     		});
 
     		const { ctx } = this.$$;
@@ -1125,7 +1125,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$h(ctx) {
+    function create_fragment$g(ctx) {
     	let div;
     	let table;
     	let thead;
@@ -1280,7 +1280,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$h.name,
+    		id: create_fragment$g.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1289,7 +1289,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$h($$self, $$props, $$invalidate) {
+    function instance$g($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Roster', slots, []);
     	let { roster, teamName } = $$props;
@@ -1321,13 +1321,13 @@ var app = (function () {
     class Roster extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$h, create_fragment$h, safe_not_equal, { roster: 0, teamName: 1 });
+    		init(this, options, instance$g, create_fragment$g, safe_not_equal, { roster: 0, teamName: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Roster",
     			options,
-    			id: create_fragment$h.name
+    			id: create_fragment$g.name
     		});
 
     		const { ctx } = this.$$;
@@ -1363,7 +1363,7 @@ var app = (function () {
     const file$f = "src/Team.svelte";
 
     // (43:6) {#if activeGolferCounts["pga"] > 0}
-    function create_if_block_3$7(ctx) {
+    function create_if_block_3$8(ctx) {
     	let span;
     	let t_value = /*activeGolferCounts*/ ctx[3]["pga"] + "";
     	let t;
@@ -1389,7 +1389,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$7.name,
+    		id: create_if_block_3$8.name,
     		type: "if",
     		source: "(43:6) {#if activeGolferCounts[\\\"pga\\\"] > 0}",
     		ctx
@@ -1399,7 +1399,7 @@ var app = (function () {
     }
 
     // (46:7) {#if activeGolferCounts["liv"] > 0}
-    function create_if_block_2$7(ctx) {
+    function create_if_block_2$8(ctx) {
     	let span;
     	let t_value = /*activeGolferCounts*/ ctx[3]["liv"] + "";
     	let t;
@@ -1425,7 +1425,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$7.name,
+    		id: create_if_block_2$8.name,
     		type: "if",
     		source: "(46:7) {#if activeGolferCounts[\\\"liv\\\"] > 0}",
     		ctx
@@ -1435,7 +1435,7 @@ var app = (function () {
     }
 
     // (49:7) {#if activeGolferCounts["eur"] > 0}
-    function create_if_block_1$8(ctx) {
+    function create_if_block_1$9(ctx) {
     	let span;
     	let t_value = /*activeGolferCounts*/ ctx[3]["eur"] + "";
     	let t;
@@ -1461,7 +1461,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$8.name,
+    		id: create_if_block_1$9.name,
     		type: "if",
     		source: "(49:7) {#if activeGolferCounts[\\\"eur\\\"] > 0}",
     		ctx
@@ -1522,7 +1522,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$g(ctx) {
+    function create_fragment$f(ctx) {
     	let div2;
     	let div1;
     	let table;
@@ -1556,9 +1556,9 @@ var app = (function () {
     	let current;
     	let mounted;
     	let dispose;
-    	let if_block0 = /*activeGolferCounts*/ ctx[3]["pga"] > 0 && create_if_block_3$7(ctx);
-    	let if_block1 = /*activeGolferCounts*/ ctx[3]["liv"] > 0 && create_if_block_2$7(ctx);
-    	let if_block2 = /*activeGolferCounts*/ ctx[3]["eur"] > 0 && create_if_block_1$8(ctx);
+    	let if_block0 = /*activeGolferCounts*/ ctx[3]["pga"] > 0 && create_if_block_3$8(ctx);
+    	let if_block1 = /*activeGolferCounts*/ ctx[3]["liv"] > 0 && create_if_block_2$8(ctx);
+    	let if_block2 = /*activeGolferCounts*/ ctx[3]["eur"] > 0 && create_if_block_1$9(ctx);
     	let if_block3 = /*rosterVisible*/ ctx[4] && create_if_block$c(ctx);
 
     	const block = {
@@ -1671,7 +1671,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_3$7(ctx);
+    					if_block0 = create_if_block_3$8(ctx);
     					if_block0.c();
     					if_block0.m(div0, t7);
     				}
@@ -1684,7 +1684,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_2$7(ctx);
+    					if_block1 = create_if_block_2$8(ctx);
     					if_block1.c();
     					if_block1.m(div0, t8);
     				}
@@ -1697,7 +1697,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_1$8(ctx);
+    					if_block2 = create_if_block_1$9(ctx);
     					if_block2.c();
     					if_block2.m(div0, null);
     				}
@@ -1761,7 +1761,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$g.name,
+    		id: create_fragment$f.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1770,7 +1770,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$g($$self, $$props, $$invalidate) {
+    function instance$f($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Team', slots, []);
     	let { team, placeNumber, isFavorite, activeGolferCounts } = $$props;
@@ -1842,7 +1842,7 @@ var app = (function () {
     	constructor(options) {
     		super(options);
 
-    		init(this, options, instance$g, create_fragment$g, safe_not_equal, {
+    		init(this, options, instance$f, create_fragment$f, safe_not_equal, {
     			team: 0,
     			placeNumber: 1,
     			isFavorite: 2,
@@ -1853,7 +1853,7 @@ var app = (function () {
     			component: this,
     			tagName: "Team",
     			options,
-    			id: create_fragment$g.name
+    			id: create_fragment$f.name
     		});
 
     		const { ctx } = this.$$;
@@ -7663,7 +7663,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$f(ctx) {
+    function create_fragment$e(ctx) {
     	let table;
     	let each_value = /*players*/ ctx[0];
     	validate_each_argument(each_value);
@@ -7729,7 +7729,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$f.name,
+    		id: create_fragment$e.name,
     		type: "component",
     		source: "",
     		ctx
@@ -7738,7 +7738,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$f($$self, $$props, $$invalidate) {
+    function instance$e($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('ResultsTable', slots, []);
     	let { players } = $$props;
@@ -7768,13 +7768,13 @@ var app = (function () {
     class ResultsTable extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$f, create_fragment$f, safe_not_equal, { players: 0 });
+    		init(this, options, instance$e, create_fragment$e, safe_not_equal, { players: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "ResultsTable",
     			options,
-    			id: create_fragment$f.name
+    			id: create_fragment$e.name
     		});
 
     		const { ctx } = this.$$;
@@ -7796,7 +7796,7 @@ var app = (function () {
 
     /* src/Weekly.svelte generated by Svelte v3.50.1 */
 
-    const { console: console_1$1 } = globals;
+    const { console: console_1$3 } = globals;
     const file$d = "src/Weekly.svelte";
 
     function get_each_context$a(ctx, list, i) {
@@ -7807,7 +7807,7 @@ var app = (function () {
     }
 
     // (339:0) {:else}
-    function create_else_block$7(ctx) {
+    function create_else_block$8(ctx) {
     	let t;
     	let div;
     	let current_block_type_index;
@@ -7815,13 +7815,13 @@ var app = (function () {
     	let current;
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$6;
+    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$7;
     		return create_else_block_2;
     	}
 
     	let current_block_type = select_block_type_1(ctx);
     	let if_block0 = current_block_type(ctx);
-    	const if_block_creators = [create_if_block_2$6, create_if_block_3$6, create_else_block_1$5];
+    	const if_block_creators = [create_if_block_2$7, create_if_block_3$7, create_else_block_1$6];
     	const if_blocks = [];
 
     	function select_block_type_2(ctx, dirty) {
@@ -7907,7 +7907,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$7.name,
+    		id: create_else_block$8.name,
     		type: "else",
     		source: "(339:0) {:else}",
     		ctx
@@ -7921,7 +7921,7 @@ var app = (function () {
     	let t;
     	let resultstable;
     	let current;
-    	let if_block = /*tourneyName*/ ctx[1] && create_if_block_1$7(ctx);
+    	let if_block = /*tourneyName*/ ctx[1] && create_if_block_1$8(ctx);
 
     	resultstable = new ResultsTable({
     			props: { players: /*resultsPlayers*/ ctx[4] },
@@ -7945,7 +7945,7 @@ var app = (function () {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block_1$7(ctx);
+    					if_block = create_if_block_1$8(ctx);
     					if_block.c();
     					if_block.m(t.parentNode, t);
     				}
@@ -8021,7 +8021,7 @@ var app = (function () {
     }
 
     // (341:0) {#if tourneyName}
-    function create_if_block_4$6(ctx) {
+    function create_if_block_4$7(ctx) {
     	let h1;
     	let t;
 
@@ -8046,7 +8046,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$6.name,
+    		id: create_if_block_4$7.name,
     		type: "if",
     		source: "(341:0) {#if tourneyName}",
     		ctx
@@ -8056,7 +8056,7 @@ var app = (function () {
     }
 
     // (364:1) {:else}
-    function create_else_block_1$5(ctx) {
+    function create_else_block_1$6(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -8087,7 +8087,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$5.name,
+    		id: create_else_block_1$6.name,
     		type: "else",
     		source: "(364:1) {:else}",
     		ctx
@@ -8097,7 +8097,7 @@ var app = (function () {
     }
 
     // (358:17) 
-    function create_if_block_3$6(ctx) {
+    function create_if_block_3$7(ctx) {
     	let div;
     	let code0;
     	let t0;
@@ -8155,7 +8155,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$6.name,
+    		id: create_if_block_3$7.name,
     		type: "if",
     		source: "(358:17) ",
     		ctx
@@ -8165,7 +8165,7 @@ var app = (function () {
     }
 
     // (348:1) {#if teams}
-    function create_if_block_2$6(ctx) {
+    function create_if_block_2$7(ctx) {
     	let each_1_anchor;
     	let current;
     	let each_value = /*teams*/ ctx[0];
@@ -8251,7 +8251,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$6.name,
+    		id: create_if_block_2$7.name,
     		type: "if",
     		source: "(348:1) {#if teams}",
     		ctx
@@ -8332,7 +8332,7 @@ var app = (function () {
     }
 
     // (334:1) {#if tourneyName}
-    function create_if_block_1$7(ctx) {
+    function create_if_block_1$8(ctx) {
     	let h1;
     	let t;
 
@@ -8356,7 +8356,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$7.name,
+    		id: create_if_block_1$8.name,
     		type: "if",
     		source: "(334:1) {#if tourneyName}",
     		ctx
@@ -8365,12 +8365,12 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$e(ctx) {
+    function create_fragment$d(ctx) {
     	let current_block_type_index;
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block$b, create_else_block$7];
+    	const if_block_creators = [create_if_block$b, create_else_block$8];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -8414,7 +8414,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$e.name,
+    		id: create_fragment$d.name,
     		type: "component",
     		source: "",
     		ctx
@@ -8423,7 +8423,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$e($$self, $$props, $$invalidate) {
+    function instance$d($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Weekly', slots, []);
     	let teams, tourneyName, leaderboard, favoriteTeam, blurb;
@@ -9007,7 +9007,7 @@ var app = (function () {
     	const writable_props = ['nate'];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1$1.warn(`<Weekly> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1$3.warn(`<Weekly> was created with unknown prop '${key}'`);
     	});
 
     	$$self.$$set = $$props => {
@@ -9062,13 +9062,13 @@ var app = (function () {
     class Weekly extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$e, create_fragment$e, safe_not_equal, { nate: 6 });
+    		init(this, options, instance$d, create_fragment$d, safe_not_equal, { nate: 6 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Weekly",
     			options,
-    			id: create_fragment$e.name
+    			id: create_fragment$d.name
     		});
     	}
 
@@ -9092,7 +9092,7 @@ var app = (function () {
     }
 
     // (193:0) {:else}
-    function create_else_block_1$4(ctx) {
+    function create_else_block_1$5(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -9121,7 +9121,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$4.name,
+    		id: create_else_block_1$5.name,
     		type: "else",
     		source: "(193:0) {:else}",
     		ctx
@@ -9131,7 +9131,7 @@ var app = (function () {
     }
 
     // (191:0) {#if tourneyName}
-    function create_if_block_4$5(ctx) {
+    function create_if_block_4$6(ctx) {
     	let h1;
     	let t;
 
@@ -9156,7 +9156,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$5.name,
+    		id: create_if_block_4$6.name,
     		type: "if",
     		source: "(191:0) {#if tourneyName}",
     		ctx
@@ -9166,7 +9166,7 @@ var app = (function () {
     }
 
     // (196:0) {#if livTourneyName}
-    function create_if_block_3$5(ctx) {
+    function create_if_block_3$6(ctx) {
     	let h1;
     	let t;
 
@@ -9191,7 +9191,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$5.name,
+    		id: create_if_block_3$6.name,
     		type: "if",
     		source: "(196:0) {#if livTourneyName}",
     		ctx
@@ -9201,7 +9201,7 @@ var app = (function () {
     }
 
     // (197:0) {#if eurTourneyName}
-    function create_if_block_2$5(ctx) {
+    function create_if_block_2$6(ctx) {
     	let h1;
     	let t;
 
@@ -9226,7 +9226,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$5.name,
+    		id: create_if_block_2$6.name,
     		type: "if",
     		source: "(197:0) {#if eurTourneyName}",
     		ctx
@@ -9236,7 +9236,7 @@ var app = (function () {
     }
 
     // (213:1) {:else}
-    function create_else_block$6(ctx) {
+    function create_else_block$7(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -9267,7 +9267,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$6.name,
+    		id: create_else_block$7.name,
     		type: "else",
     		source: "(213:1) {:else}",
     		ctx
@@ -9277,7 +9277,7 @@ var app = (function () {
     }
 
     // (209:17) 
-    function create_if_block_1$6(ctx) {
+    function create_if_block_1$7(ctx) {
     	let div;
     	let code;
     	let t0;
@@ -9314,7 +9314,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$6.name,
+    		id: create_if_block_1$7.name,
     		type: "if",
     		source: "(209:17) ",
     		ctx
@@ -9492,7 +9492,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$d(ctx) {
+    function create_fragment$c(ctx) {
     	let t0;
     	let t1;
     	let t2;
@@ -9510,15 +9510,15 @@ var app = (function () {
     	let current;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$5;
-    		return create_else_block_1$4;
+    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$6;
+    		return create_else_block_1$5;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block0 = current_block_type(ctx);
-    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$5(ctx);
-    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$5(ctx);
-    	const if_block_creators = [create_if_block$a, create_if_block_1$6, create_else_block$6];
+    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$6(ctx);
+    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$6(ctx);
+    	const if_block_creators = [create_if_block$a, create_if_block_1$7, create_else_block$7];
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
@@ -9596,7 +9596,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_3$5(ctx);
+    					if_block1 = create_if_block_3$6(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -9609,7 +9609,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_2$5(ctx);
+    					if_block2 = create_if_block_2$6(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -9673,7 +9673,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$d.name,
+    		id: create_fragment$c.name,
     		type: "component",
     		source: "",
     		ctx
@@ -9682,7 +9682,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$d($$self, $$props, $$invalidate) {
+    function instance$c($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('WeeklyEspn', slots, []);
 
@@ -10048,13 +10048,13 @@ var app = (function () {
     class WeeklyEspn extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$d, create_fragment$d, safe_not_equal, {});
+    		init(this, options, instance$c, create_fragment$c, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "WeeklyEspn",
     			options,
-    			id: create_fragment$d.name
+    			id: create_fragment$c.name
     		});
     	}
     }
@@ -10125,7 +10125,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$c(ctx) {
+    function create_fragment$b(ctx) {
     	let div;
     	let table;
     	let thead;
@@ -10244,7 +10244,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$c.name,
+    		id: create_fragment$b.name,
     		type: "component",
     		source: "",
     		ctx
@@ -10253,7 +10253,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$c($$self, $$props, $$invalidate) {
+    function instance$b($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('OverallRoster', slots, []);
     	let { roster } = $$props;
@@ -10283,13 +10283,13 @@ var app = (function () {
     class OverallRoster extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$c, create_fragment$c, safe_not_equal, { roster: 0 });
+    		init(this, options, instance$b, create_fragment$b, safe_not_equal, { roster: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "OverallRoster",
     			options,
-    			id: create_fragment$c.name
+    			id: create_fragment$b.name
     		});
 
     		const { ctx } = this.$$;
@@ -10360,7 +10360,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$b(ctx) {
+    function create_fragment$a(ctx) {
     	let div3;
     	let div2;
     	let div1;
@@ -10547,7 +10547,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$b.name,
+    		id: create_fragment$a.name,
     		type: "component",
     		source: "",
     		ctx
@@ -10556,7 +10556,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$b($$self, $$props, $$invalidate) {
+    function instance$a($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('OverallTeam', slots, []);
     	let { team, placeNumber, isFavorite } = $$props;
@@ -10609,13 +10609,13 @@ var app = (function () {
     class OverallTeam extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$b, create_fragment$b, safe_not_equal, { team: 0, placeNumber: 1, isFavorite: 2 });
+    		init(this, options, instance$a, create_fragment$a, safe_not_equal, { team: 0, placeNumber: 1, isFavorite: 2 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "OverallTeam",
     			options,
-    			id: create_fragment$b.name
+    			id: create_fragment$a.name
     		});
 
     		const { ctx } = this.$$;
@@ -10661,7 +10661,7 @@ var app = (function () {
 
     /* src/Overall.svelte generated by Svelte v3.50.1 */
 
-    const { console: console_1 } = globals;
+    const { console: console_1$2 } = globals;
     const file$9 = "src/Overall.svelte";
 
     function get_each_context$7(ctx, list, i) {
@@ -10672,7 +10672,7 @@ var app = (function () {
     }
 
     // (109:1) {:else}
-    function create_else_block$5(ctx) {
+    function create_else_block$6(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -10702,7 +10702,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$5.name,
+    		id: create_else_block$6.name,
     		type: "else",
     		source: "(109:1) {:else}",
     		ctx
@@ -10878,12 +10878,12 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$a(ctx) {
+    function create_fragment$9(ctx) {
     	let div;
     	let current_block_type_index;
     	let if_block;
     	let current;
-    	const if_block_creators = [create_if_block$8, create_else_block$5];
+    	const if_block_creators = [create_if_block$8, create_else_block$6];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -10953,7 +10953,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$a.name,
+    		id: create_fragment$9.name,
     		type: "component",
     		source: "",
     		ctx
@@ -10962,7 +10962,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$a($$self, $$props, $$invalidate) {
+    function instance$9($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Overall', slots, []);
     	let overall, favoriteTeam;
@@ -11072,7 +11072,7 @@ var app = (function () {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<Overall> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1$2.warn(`<Overall> was created with unknown prop '${key}'`);
     	});
 
     	$$self.$capture_state = () => ({
@@ -11101,13 +11101,13 @@ var app = (function () {
     class Overall extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$a, create_fragment$a, safe_not_equal, {});
+    		init(this, options, instance$9, create_fragment$9, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Overall",
     			options,
-    			id: create_fragment$a.name
+    			id: create_fragment$9.name
     		});
     	}
     }
@@ -11116,7 +11116,7 @@ var app = (function () {
 
     const file$8 = "src/ConfidencePool/Pick.svelte";
 
-    function create_fragment$9(ctx) {
+    function create_fragment$8(ctx) {
     	let tr;
     	let td0;
     	let t0;
@@ -11163,7 +11163,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$9.name,
+    		id: create_fragment$8.name,
     		type: "component",
     		source: "",
     		ctx
@@ -11172,7 +11172,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$9($$self, $$props, $$invalidate) {
+    function instance$8($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Pick', slots, []);
     	let { entry, team, wager, pointswon, pointslost } = $$props;
@@ -11224,7 +11224,7 @@ var app = (function () {
     	constructor(options) {
     		super(options);
 
-    		init(this, options, instance$9, create_fragment$9, safe_not_equal, {
+    		init(this, options, instance$8, create_fragment$8, safe_not_equal, {
     			entry: 3,
     			team: 0,
     			wager: 1,
@@ -11236,7 +11236,7 @@ var app = (function () {
     			component: this,
     			tagName: "Pick",
     			options,
-    			id: create_fragment$9.name
+    			id: create_fragment$8.name
     		});
 
     		const { ctx } = this.$$;
@@ -11326,7 +11326,7 @@ var app = (function () {
     }
 
     // (45:7) {#if pick["Wager"] === point}
-    function create_if_block_1$5(ctx) {
+    function create_if_block_1$6(ctx) {
     	let span;
     	let t0_value = /*point*/ ctx[14] + "";
     	let t0;
@@ -11357,7 +11357,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$5.name,
+    		id: create_if_block_1$6.name,
     		type: "if",
     		source: "(45:7) {#if pick[\\\"Wager\\\"] === point}",
     		ctx
@@ -11369,7 +11369,7 @@ var app = (function () {
     // (44:6) {#each picks_no_champs as pick}
     function create_each_block_2(ctx) {
     	let if_block_anchor;
-    	let if_block = /*pick*/ ctx[11]["Wager"] === /*point*/ ctx[14] && create_if_block_1$5(ctx);
+    	let if_block = /*pick*/ ctx[11]["Wager"] === /*point*/ ctx[14] && create_if_block_1$6(ctx);
 
     	const block = {
     		c: function create() {
@@ -11670,7 +11670,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$8(ctx) {
+    function create_fragment$7(ctx) {
     	let div4;
     	let div3;
     	let div2;
@@ -11884,7 +11884,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$8.name,
+    		id: create_fragment$7.name,
     		type: "component",
     		source: "",
     		ctx
@@ -11893,7 +11893,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$8($$self, $$props, $$invalidate) {
+    function instance$7($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Entry', slots, []);
     	let { entry, pointswon, pointsremaining, placenumber, picks } = $$props;
@@ -12027,7 +12027,7 @@ var app = (function () {
     	constructor(options) {
     		super(options);
 
-    		init(this, options, instance$8, create_fragment$8, safe_not_equal, {
+    		init(this, options, instance$7, create_fragment$7, safe_not_equal, {
     			entry: 10,
     			pointswon: 0,
     			pointsremaining: 1,
@@ -12039,7 +12039,7 @@ var app = (function () {
     			component: this,
     			tagName: "Entry",
     			options,
-    			id: create_fragment$8.name
+    			id: create_fragment$7.name
     		});
 
     		const { ctx } = this.$$;
@@ -12289,7 +12289,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$7(ctx) {
+    function create_fragment$6(ctx) {
     	let h1;
     	let t1;
     	let if_block_anchor;
@@ -12359,7 +12359,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$7.name,
+    		id: create_fragment$6.name,
     		type: "component",
     		source: "",
     		ctx
@@ -12368,7 +12368,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$7($$self, $$props, $$invalidate) {
+    function instance$6($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('ConfidencePool', slots, []);
     	let spreadsheet_id = "1ciYHM-Aan8auuuep--A90OaGKEAaMnkoqrH4ccXppRI";
@@ -12478,194 +12478,258 @@ var app = (function () {
     class ConfidencePool extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$7, create_fragment$7, safe_not_equal, {});
+    		init(this, options, instance$6, create_fragment$6, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "ConfidencePool",
     			options,
-    			id: create_fragment$7.name
+    			id: create_fragment$6.name
     		});
     	}
     }
 
-    /* src/NBA/Game.svelte generated by Svelte v3.50.1 */
+    /* src/MastersPool.svelte generated by Svelte v3.50.1 */
+    const file$5 = "src/MastersPool.svelte";
 
-    const file$5 = "src/NBA/Game.svelte";
+    function get_each_context$4(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[16] = list[i];
+    	child_ctx[18] = i;
+    	return child_ctx;
+    }
 
-    function create_fragment$6(ctx) {
-    	let t0_value = JSON.stringify(/*game*/ ctx[0].boxscore) + "";
-    	let t0;
-    	let t1;
-    	let div;
-    	let img0;
-    	let img0_src_value;
-    	let t2;
-    	let img1;
-    	let img1_src_value;
-    	let t3;
-    	let br;
-    	let t4;
-    	let span0;
-    	let t5_value = /*game*/ ctx[0].awayScore + "";
-    	let t5;
-    	let t6;
-    	let span1;
-    	let t7_value = /*game*/ ctx[0].homeScore + "";
-    	let t7;
+    // (183:0) {:else}
+    function create_else_block_1$4(ctx) {
+    	let img;
+    	let img_src_value;
+    	let span;
 
     	const block = {
     		c: function create() {
-    			t0 = text(t0_value);
-    			t1 = space();
-    			div = element("div");
-    			img0 = element("img");
-    			t2 = space();
-    			img1 = element("img");
-    			t3 = space();
-    			br = element("br");
-    			t4 = space();
-    			span0 = element("span");
-    			t5 = text(t5_value);
-    			t6 = text("\n\t \n\t");
-    			span1 = element("span");
-    			t7 = text(t7_value);
-    			attr_dev(img0, "class", "logo svelte-5qjji5");
-    			if (!src_url_equal(img0.src, img0_src_value = "https://cdn.nba.com/logos/nba/" + /*game*/ ctx[0].awayId + "/primary/L/logo.svg")) attr_dev(img0, "src", img0_src_value);
-    			add_location(img0, file$5, 8, 1, 92);
-    			attr_dev(img1, "class", "logo svelte-5qjji5");
-    			if (!src_url_equal(img1.src, img1_src_value = "https://cdn.nba.com/logos/nba/" + /*game*/ ctx[0].homeId + "/primary/L/logo.svg")) attr_dev(img1, "src", img1_src_value);
-    			add_location(img1, file$5, 9, 1, 181);
-    			add_location(br, file$5, 10, 1, 270);
-    			attr_dev(span0, "class", "score");
-    			add_location(span0, file$5, 11, 1, 276);
-    			attr_dev(span1, "class", "score");
-    			add_location(span1, file$5, 13, 1, 329);
-    			attr_dev(div, "class", "game svelte-5qjji5");
-    			add_location(div, file$5, 7, 0, 72);
-    		},
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    			img = element("img");
+    			span = element("span");
+    			span.textContent = " Loading current tournament";
+    			attr_dev(img, "class", "sheets-icon");
+    			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Loading");
+    			add_location(img, file$5, 183, 1, 5738);
+    			add_location(span, file$5, 183, 127, 5864);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, div, anchor);
-    			append_dev(div, img0);
-    			append_dev(div, t2);
-    			append_dev(div, img1);
-    			append_dev(div, t3);
-    			append_dev(div, br);
-    			append_dev(div, t4);
-    			append_dev(div, span0);
-    			append_dev(span0, t5);
-    			append_dev(div, t6);
-    			append_dev(div, span1);
-    			append_dev(span1, t7);
+    			insert_dev(target, img, anchor);
+    			insert_dev(target, span, anchor);
     		},
-    		p: function update(ctx, [dirty]) {
-    			if (dirty & /*game*/ 1 && t0_value !== (t0_value = JSON.stringify(/*game*/ ctx[0].boxscore) + "")) set_data_dev(t0, t0_value);
-
-    			if (dirty & /*game*/ 1 && !src_url_equal(img0.src, img0_src_value = "https://cdn.nba.com/logos/nba/" + /*game*/ ctx[0].awayId + "/primary/L/logo.svg")) {
-    				attr_dev(img0, "src", img0_src_value);
-    			}
-
-    			if (dirty & /*game*/ 1 && !src_url_equal(img1.src, img1_src_value = "https://cdn.nba.com/logos/nba/" + /*game*/ ctx[0].homeId + "/primary/L/logo.svg")) {
-    				attr_dev(img1, "src", img1_src_value);
-    			}
-
-    			if (dirty & /*game*/ 1 && t5_value !== (t5_value = /*game*/ ctx[0].awayScore + "")) set_data_dev(t5, t5_value);
-    			if (dirty & /*game*/ 1 && t7_value !== (t7_value = /*game*/ ctx[0].homeScore + "")) set_data_dev(t7, t7_value);
-    		},
-    		i: noop,
-    		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(img);
+    			if (detaching) detach_dev(span);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$6.name,
-    		type: "component",
-    		source: "",
+    		id: create_else_block_1$4.name,
+    		type: "else",
+    		source: "(183:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    function instance$6($$self, $$props, $$invalidate) {
-    	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots('Game', slots, []);
-    	let { game } = $$props;
-    	const writable_props = ['game'];
+    // (181:0) {#if tourneyName}
+    function create_if_block_4$5(ctx) {
+    	let h1;
 
-    	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Game> was created with unknown prop '${key}'`);
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			h1.textContent = "Masters Pool Projected Standings";
+    			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
+    			add_location(h1, file$5, 181, 1, 5666);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_4$5.name,
+    		type: "if",
+    		source: "(181:0) {#if tourneyName}",
+    		ctx
     	});
 
-    	$$self.$$set = $$props => {
-    		if ('game' in $$props) $$invalidate(0, game = $$props.game);
-    	};
-
-    	$$self.$capture_state = () => ({ game });
-
-    	$$self.$inject_state = $$props => {
-    		if ('game' in $$props) $$invalidate(0, game = $$props.game);
-    	};
-
-    	if ($$props && "$$inject" in $$props) {
-    		$$self.$inject_state($$props.$$inject);
-    	}
-
-    	return [game];
+    	return block;
     }
 
-    class Game extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, instance$6, create_fragment$6, safe_not_equal, { game: 0 });
+    // (186:0) {#if livTourneyName}
+    function create_if_block_3$5(ctx) {
+    	let h1;
+    	let t;
 
-    		dispatch_dev("SvelteRegisterComponent", {
-    			component: this,
-    			tagName: "Game",
-    			options,
-    			id: create_fragment$6.name
-    		});
-
-    		const { ctx } = this.$$;
-    		const props = options.props || {};
-
-    		if (/*game*/ ctx[0] === undefined && !('game' in props)) {
-    			console.warn("<Game> was created without expected prop 'game'");
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			t = text(/*livTourneyName*/ ctx[2]);
+    			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
+    			add_location(h1, file$5, 185, 20, 5936);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    			append_dev(h1, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*livTourneyName*/ 4) set_data_dev(t, /*livTourneyName*/ ctx[2]);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
     		}
-    	}
+    	};
 
-    	get game() {
-    		throw new Error("<Game>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_3$5.name,
+    		type: "if",
+    		source: "(186:0) {#if livTourneyName}",
+    		ctx
+    	});
 
-    	set game(value) {
-    		throw new Error("<Game>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
+    	return block;
     }
 
-    /* src/NBA/Nba.svelte generated by Svelte v3.50.1 */
+    // (187:0) {#if eurTourneyName}
+    function create_if_block_2$5(ctx) {
+    	let h1;
+    	let t;
 
-    function get_each_context$4(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[6] = list[i];
-    	return child_ctx;
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			t = text(/*eurTourneyName*/ ctx[3]);
+    			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
+    			add_location(h1, file$5, 186, 20, 6012);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    			append_dev(h1, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*eurTourneyName*/ 8) set_data_dev(t, /*eurTourneyName*/ ctx[3]);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2$5.name,
+    		type: "if",
+    		source: "(187:0) {#if eurTourneyName}",
+    		ctx
+    	});
+
+    	return block;
     }
 
-    // (40:0) {#if games != []}
+    // (203:1) {:else}
+    function create_else_block$5(ctx) {
+    	let img;
+    	let img_src_value;
+    	let span;
+
+    	const block = {
+    		c: function create() {
+    			img = element("img");
+    			span = element("span");
+    			span.textContent = " Scraping ESPN";
+    			attr_dev(img, "class", "sheets-icon");
+    			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Loading");
+    			add_location(img, file$5, 203, 2, 6427);
+    			add_location(span, file$5, 203, 81, 6506);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, img, anchor);
+    			insert_dev(target, span, anchor);
+    		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(img);
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block$5.name,
+    		type: "else",
+    		source: "(203:1) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (199:17) 
+    function create_if_block_1$5(ctx) {
+    	let div;
+    	let code;
+    	let t0;
+    	let t1;
+    	let t2;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			code = element("code");
+    			t0 = text("🚨 ");
+    			t1 = text(/*error*/ ctx[4]);
+    			t2 = text(" 🚨");
+    			add_location(code, file$5, 200, 3, 6380);
+    			attr_dev(div, "class", "error svelte-ih46r3");
+    			add_location(div, file$5, 199, 2, 6357);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, code);
+    			append_dev(code, t0);
+    			append_dev(code, t1);
+    			append_dev(code, t2);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*error*/ 16) set_data_dev(t1, /*error*/ ctx[4]);
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1$5.name,
+    		type: "if",
+    		source: "(199:17) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (189:1) {#if teams}
     function create_if_block$5(ctx) {
     	let each_1_anchor;
     	let current;
-    	let each_value = /*games*/ ctx[0];
+    	let each_value = /*teams*/ ctx[0];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -12694,8 +12758,8 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*games*/ 1) {
-    				each_value = /*games*/ ctx[0];
+    			if (dirty & /*teams*/ 1) {
+    				each_value = /*teams*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
 
@@ -12750,546 +12814,6 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(40:0) {#if games != []}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (41:1) {#each games as game}
-    function create_each_block$4(ctx) {
-    	let game;
-    	let current;
-
-    	game = new Game({
-    			props: { game: /*game*/ ctx[6] },
-    			$$inline: true
-    		});
-
-    	const block = {
-    		c: function create() {
-    			create_component(game.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(game, target, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const game_changes = {};
-    			if (dirty & /*games*/ 1) game_changes.game = /*game*/ ctx[6];
-    			game.$set(game_changes);
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(game.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(game.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(game, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block$4.name,
-    		type: "each",
-    		source: "(41:1) {#each games as game}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    function create_fragment$5(ctx) {
-    	let t0;
-    	let t1;
-    	let if_block_anchor;
-    	let current;
-    	let if_block = /*games*/ ctx[0] != [] && create_if_block$5(ctx);
-
-    	const block = {
-    		c: function create() {
-    			t0 = text(/*gameDate*/ ctx[1]);
-    			t1 = space();
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
-    		},
-    		l: function claim(nodes) {
-    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t0, anchor);
-    			insert_dev(target, t1, anchor);
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, [dirty]) {
-    			if (/*games*/ ctx[0] != []) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-
-    					if (dirty & /*games*/ 1) {
-    						transition_in(if_block, 1);
-    					}
-    				} else {
-    					if_block = create_if_block$5(ctx);
-    					if_block.c();
-    					transition_in(if_block, 1);
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-    				}
-    			} else if (if_block) {
-    				group_outros();
-
-    				transition_out(if_block, 1, 1, () => {
-    					if_block = null;
-    				});
-
-    				check_outros();
-    			}
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(if_block);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(if_block);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t0);
-    			if (detaching) detach_dev(t1);
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_fragment$5.name,
-    		type: "component",
-    		source: "",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    function instance$5($$self, $$props, $$invalidate) {
-    	let { $$slots: slots = {}, $$scope } = $$props;
-    	validate_slots('Nba', slots, []);
-    	let games = [];
-    	let boxscores = [];
-    	let gameDate = "2023-01-17";
-
-    	let requestHeaders = {
-    		method: 'GET',
-    		headers: { "x-api-key": "3jpk6unmf43xzfx6" }
-    	};
-
-    	onMount(async () => {
-    		try {
-    			getGames(gameDate);
-    		} catch(e) {
-    			error = e;
-    		}
-    	});
-
-    	const getGames = async gameDate => {
-    		const response = await fetch(`http://api.ngss.nba.com:9000/Leagues/00/games?FromDate=2023-01-17&ToDate=2023-01-18&Limit=500`, requestHeaders);
-    		const json = await response.json();
-    		var gameResults = json.data;
-
-    		gameResults.forEach(game => {
-    			getBoxScore(game);
-    		});
-
-    		// console.log(gameResults)
-    		$$invalidate(0, games = await gameResults);
-    	};
-
-    	const getBoxScore = async game => {
-    		const response = await fetch(`http://api.ngss.nba.com:9000/games/` + game.gameId + `/boxscorereport?Format=json&language=en_US`, requestHeaders);
-    		const json = await response.json();
-    		game.boxscore = json.data;
-    	};
-
-    	const writable_props = [];
-
-    	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Nba> was created with unknown prop '${key}'`);
-    	});
-
-    	$$self.$capture_state = () => ({
-    		onMount,
-    		Game,
-    		games,
-    		boxscores,
-    		gameDate,
-    		requestHeaders,
-    		getGames,
-    		getBoxScore
-    	});
-
-    	$$self.$inject_state = $$props => {
-    		if ('games' in $$props) $$invalidate(0, games = $$props.games);
-    		if ('boxscores' in $$props) boxscores = $$props.boxscores;
-    		if ('gameDate' in $$props) $$invalidate(1, gameDate = $$props.gameDate);
-    		if ('requestHeaders' in $$props) requestHeaders = $$props.requestHeaders;
-    	};
-
-    	if ($$props && "$$inject" in $$props) {
-    		$$self.$inject_state($$props.$$inject);
-    	}
-
-    	return [games, gameDate];
-    }
-
-    class Nba extends SvelteComponentDev {
-    	constructor(options) {
-    		super(options);
-    		init(this, options, instance$5, create_fragment$5, safe_not_equal, {});
-
-    		dispatch_dev("SvelteRegisterComponent", {
-    			component: this,
-    			tagName: "Nba",
-    			options,
-    			id: create_fragment$5.name
-    		});
-    	}
-    }
-
-    /* src/MastersPool.svelte generated by Svelte v3.50.1 */
-    const file$4 = "src/MastersPool.svelte";
-
-    function get_each_context$3(ctx, list, i) {
-    	const child_ctx = ctx.slice();
-    	child_ctx[16] = list[i];
-    	child_ctx[18] = i;
-    	return child_ctx;
-    }
-
-    // (183:0) {:else}
-    function create_else_block_1$3(ctx) {
-    	let img;
-    	let img_src_value;
-    	let span;
-
-    	const block = {
-    		c: function create() {
-    			img = element("img");
-    			span = element("span");
-    			span.textContent = " Loading current tournament";
-    			attr_dev(img, "class", "sheets-icon");
-    			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$4, 183, 1, 5738);
-    			add_location(span, file$4, 183, 127, 5864);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, img, anchor);
-    			insert_dev(target, span, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(img);
-    			if (detaching) detach_dev(span);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block_1$3.name,
-    		type: "else",
-    		source: "(183:0) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (181:0) {#if tourneyName}
-    function create_if_block_4$4(ctx) {
-    	let h1;
-
-    	const block = {
-    		c: function create() {
-    			h1 = element("h1");
-    			h1.textContent = "Masters Pool Projected Standings";
-    			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
-    			add_location(h1, file$4, 181, 1, 5666);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, h1, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(h1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_4$4.name,
-    		type: "if",
-    		source: "(181:0) {#if tourneyName}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (186:0) {#if livTourneyName}
-    function create_if_block_3$4(ctx) {
-    	let h1;
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			h1 = element("h1");
-    			t = text(/*livTourneyName*/ ctx[2]);
-    			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
-    			add_location(h1, file$4, 185, 20, 5936);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, h1, anchor);
-    			append_dev(h1, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*livTourneyName*/ 4) set_data_dev(t, /*livTourneyName*/ ctx[2]);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(h1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_3$4.name,
-    		type: "if",
-    		source: "(186:0) {#if livTourneyName}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (187:0) {#if eurTourneyName}
-    function create_if_block_2$4(ctx) {
-    	let h1;
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			h1 = element("h1");
-    			t = text(/*eurTourneyName*/ ctx[3]);
-    			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
-    			add_location(h1, file$4, 186, 20, 6012);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, h1, anchor);
-    			append_dev(h1, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*eurTourneyName*/ 8) set_data_dev(t, /*eurTourneyName*/ ctx[3]);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(h1);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_2$4.name,
-    		type: "if",
-    		source: "(187:0) {#if eurTourneyName}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (203:1) {:else}
-    function create_else_block$4(ctx) {
-    	let img;
-    	let img_src_value;
-    	let span;
-
-    	const block = {
-    		c: function create() {
-    			img = element("img");
-    			span = element("span");
-    			span.textContent = " Scraping ESPN";
-    			attr_dev(img, "class", "sheets-icon");
-    			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$4, 203, 2, 6427);
-    			add_location(span, file$4, 203, 81, 6506);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, img, anchor);
-    			insert_dev(target, span, anchor);
-    		},
-    		p: noop,
-    		i: noop,
-    		o: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(img);
-    			if (detaching) detach_dev(span);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_else_block$4.name,
-    		type: "else",
-    		source: "(203:1) {:else}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (199:17) 
-    function create_if_block_1$4(ctx) {
-    	let div;
-    	let code;
-    	let t0;
-    	let t1;
-    	let t2;
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-    			code = element("code");
-    			t0 = text("🚨 ");
-    			t1 = text(/*error*/ ctx[4]);
-    			t2 = text(" 🚨");
-    			add_location(code, file$4, 200, 3, 6380);
-    			attr_dev(div, "class", "error svelte-ih46r3");
-    			add_location(div, file$4, 199, 2, 6357);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, code);
-    			append_dev(code, t0);
-    			append_dev(code, t1);
-    			append_dev(code, t2);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*error*/ 16) set_data_dev(t1, /*error*/ ctx[4]);
-    		},
-    		i: noop,
-    		o: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block_1$4.name,
-    		type: "if",
-    		source: "(199:17) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (189:1) {#if teams}
-    function create_if_block$4(ctx) {
-    	let each_1_anchor;
-    	let current;
-    	let each_value = /*teams*/ ctx[0];
-    	validate_each_argument(each_value);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
-    	}
-
-    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
-    		each_blocks[i] = null;
-    	});
-
-    	const block = {
-    		c: function create() {
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			each_1_anchor = empty();
-    		},
-    		m: function mount(target, anchor) {
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
-    			}
-
-    			insert_dev(target, each_1_anchor, anchor);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*teams*/ 1) {
-    				each_value = /*teams*/ ctx[0];
-    				validate_each_argument(each_value);
-    				let i;
-
-    				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context$3(ctx, each_value, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    						transition_in(each_blocks[i], 1);
-    					} else {
-    						each_blocks[i] = create_each_block$3(child_ctx);
-    						each_blocks[i].c();
-    						transition_in(each_blocks[i], 1);
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
-    					}
-    				}
-
-    				group_outros();
-
-    				for (i = each_value.length; i < each_blocks.length; i += 1) {
-    					out(i);
-    				}
-
-    				check_outros();
-    			}
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-
-    			for (let i = 0; i < each_value.length; i += 1) {
-    				transition_in(each_blocks[i]);
-    			}
-
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			each_blocks = each_blocks.filter(Boolean);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				transition_out(each_blocks[i]);
-    			}
-
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block$4.name,
-    		type: "if",
     		source: "(189:1) {#if teams}",
     		ctx
     	});
@@ -13298,7 +12822,7 @@ var app = (function () {
     }
 
     // (190:2) {#each teams as team, i}
-    function create_each_block$3(ctx) {
+    function create_each_block$4(ctx) {
     	let table;
     	let tr;
     	let td;
@@ -13323,12 +12847,12 @@ var app = (function () {
     			td = element("td");
     			create_component(team.$$.fragment);
     			t = space();
-    			add_location(td, file$4, 192, 5, 6190);
-    			add_location(tr, file$4, 191, 4, 6180);
+    			add_location(td, file$5, 192, 5, 6190);
+    			add_location(tr, file$5, 191, 4, 6180);
     			attr_dev(table, "class", "team svelte-ih46r3");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$4, 190, 3, 6131);
+    			add_location(table, file$5, 190, 3, 6131);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -13360,7 +12884,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$3.name,
+    		id: create_each_block$4.name,
     		type: "each",
     		source: "(190:2) {#each teams as team, i}",
     		ctx
@@ -13369,7 +12893,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$4(ctx) {
+    function create_fragment$5(ctx) {
     	let br0;
     	let t0;
     	let t1;
@@ -13389,15 +12913,15 @@ var app = (function () {
     	let current;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$4;
-    		return create_else_block_1$3;
+    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$5;
+    		return create_else_block_1$4;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block0 = current_block_type(ctx);
-    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$4(ctx);
-    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$4(ctx);
-    	const if_block_creators = [create_if_block$4, create_if_block_1$4, create_else_block$4];
+    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$5(ctx);
+    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$5(ctx);
+    	const if_block_creators = [create_if_block$5, create_if_block_1$5, create_else_block$5];
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
@@ -13429,15 +12953,15 @@ var app = (function () {
     			br1 = element("br");
     			t7 = space();
     			br2 = element("br");
-    			add_location(br0, file$4, 179, 0, 5642);
+    			add_location(br0, file$5, 179, 0, 5642);
     			attr_dev(div0, "class", "teams");
-    			add_location(div0, file$4, 187, 0, 6068);
+    			add_location(div0, file$5, 187, 0, 6068);
     			attr_dev(a, "href", window.location.origin + window.location.pathname + '?masters&v=' + new Date().valueOf());
     			attr_dev(a, "class", "svelte-ih46r3");
-    			add_location(a, file$4, 208, 1, 6561);
-    			add_location(div1, file$4, 207, 0, 6554);
-    			add_location(br1, file$4, 210, 0, 6676);
-    			add_location(br2, file$4, 211, 0, 6681);
+    			add_location(a, file$5, 208, 1, 6561);
+    			add_location(div1, file$5, 207, 0, 6554);
+    			add_location(br1, file$5, 210, 0, 6676);
+    			add_location(br2, file$5, 211, 0, 6681);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -13478,7 +13002,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_3$4(ctx);
+    					if_block1 = create_if_block_3$5(ctx);
     					if_block1.c();
     					if_block1.m(t2.parentNode, t2);
     				}
@@ -13491,7 +13015,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_2$4(ctx);
+    					if_block2 = create_if_block_2$5(ctx);
     					if_block2.c();
     					if_block2.m(t3.parentNode, t3);
     				}
@@ -13557,7 +13081,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$4.name,
+    		id: create_fragment$5.name,
     		type: "component",
     		source: "",
     		ctx
@@ -13566,7 +13090,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$4($$self, $$props, $$invalidate) {
+    function instance$5($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('MastersPool', slots, []);
 
@@ -13919,21 +13443,21 @@ var app = (function () {
     class MastersPool extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$4, create_fragment$4, safe_not_equal, {});
+    		init(this, options, instance$5, create_fragment$5, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "MastersPool",
     			options,
-    			id: create_fragment$4.name
+    			id: create_fragment$5.name
     		});
     	}
     }
 
     /* src/PgaPool.svelte generated by Svelte v3.50.1 */
-    const file$3 = "src/PgaPool.svelte";
+    const file$4 = "src/PgaPool.svelte";
 
-    function get_each_context$2(ctx, list, i) {
+    function get_each_context$3(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[16] = list[i];
     	child_ctx[18] = i;
@@ -13941,7 +13465,7 @@ var app = (function () {
     }
 
     // (189:0) {:else}
-    function create_else_block_1$2(ctx) {
+    function create_else_block_1$3(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -13954,8 +13478,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$3, 189, 1, 5923);
-    			add_location(span, file$3, 189, 127, 6049);
+    			add_location(img, file$4, 189, 1, 5923);
+    			add_location(span, file$4, 189, 127, 6049);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -13969,7 +13493,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$2.name,
+    		id: create_else_block_1$3.name,
     		type: "else",
     		source: "(189:0) {:else}",
     		ctx
@@ -13979,7 +13503,7 @@ var app = (function () {
     }
 
     // (187:0) {#if tourneyName}
-    function create_if_block_4$3(ctx) {
+    function create_if_block_4$4(ctx) {
     	let h1;
 
     	const block = {
@@ -13987,7 +13511,7 @@ var app = (function () {
     			h1 = element("h1");
     			h1.textContent = "PGA Pool Projected Standings";
     			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
-    			add_location(h1, file$3, 187, 1, 5855);
+    			add_location(h1, file$4, 187, 1, 5855);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -13999,7 +13523,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$3.name,
+    		id: create_if_block_4$4.name,
     		type: "if",
     		source: "(187:0) {#if tourneyName}",
     		ctx
@@ -14009,7 +13533,7 @@ var app = (function () {
     }
 
     // (192:0) {#if livTourneyName}
-    function create_if_block_3$3(ctx) {
+    function create_if_block_3$4(ctx) {
     	let h1;
     	let t;
 
@@ -14018,7 +13542,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*livTourneyName*/ ctx[2]);
     			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
-    			add_location(h1, file$3, 191, 20, 6121);
+    			add_location(h1, file$4, 191, 20, 6121);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -14034,7 +13558,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$3.name,
+    		id: create_if_block_3$4.name,
     		type: "if",
     		source: "(192:0) {#if livTourneyName}",
     		ctx
@@ -14044,7 +13568,7 @@ var app = (function () {
     }
 
     // (193:0) {#if eurTourneyName}
-    function create_if_block_2$3(ctx) {
+    function create_if_block_2$4(ctx) {
     	let h1;
     	let t;
 
@@ -14053,7 +13577,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*eurTourneyName*/ ctx[3]);
     			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
-    			add_location(h1, file$3, 192, 20, 6197);
+    			add_location(h1, file$4, 192, 20, 6197);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -14069,7 +13593,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$3.name,
+    		id: create_if_block_2$4.name,
     		type: "if",
     		source: "(193:0) {#if eurTourneyName}",
     		ctx
@@ -14079,7 +13603,7 @@ var app = (function () {
     }
 
     // (209:1) {:else}
-    function create_else_block$3(ctx) {
+    function create_else_block$4(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -14092,8 +13616,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$3, 209, 2, 6612);
-    			add_location(span, file$3, 209, 81, 6691);
+    			add_location(img, file$4, 209, 2, 6612);
+    			add_location(span, file$4, 209, 81, 6691);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -14110,7 +13634,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$3.name,
+    		id: create_else_block$4.name,
     		type: "else",
     		source: "(209:1) {:else}",
     		ctx
@@ -14120,7 +13644,7 @@ var app = (function () {
     }
 
     // (205:17) 
-    function create_if_block_1$3(ctx) {
+    function create_if_block_1$4(ctx) {
     	let div;
     	let code;
     	let t0;
@@ -14134,9 +13658,9 @@ var app = (function () {
     			t0 = text("🚨 ");
     			t1 = text(/*error*/ ctx[4]);
     			t2 = text(" 🚨");
-    			add_location(code, file$3, 206, 3, 6565);
+    			add_location(code, file$4, 206, 3, 6565);
     			attr_dev(div, "class", "error svelte-ih46r3");
-    			add_location(div, file$3, 205, 2, 6542);
+    			add_location(div, file$4, 205, 2, 6542);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -14157,7 +13681,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$3.name,
+    		id: create_if_block_1$4.name,
     		type: "if",
     		source: "(205:17) ",
     		ctx
@@ -14167,7 +13691,7 @@ var app = (function () {
     }
 
     // (195:1) {#if teams}
-    function create_if_block$3(ctx) {
+    function create_if_block$4(ctx) {
     	let each_1_anchor;
     	let current;
     	let each_value = /*teams*/ ctx[0];
@@ -14175,7 +13699,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
     	}
 
     	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -14205,13 +13729,13 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context$2(ctx, each_value, i);
+    					const child_ctx = get_each_context$3(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     						transition_in(each_blocks[i], 1);
     					} else {
-    						each_blocks[i] = create_each_block$2(child_ctx);
+    						each_blocks[i] = create_each_block$3(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
@@ -14253,7 +13777,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$3.name,
+    		id: create_if_block$4.name,
     		type: "if",
     		source: "(195:1) {#if teams}",
     		ctx
@@ -14263,7 +13787,7 @@ var app = (function () {
     }
 
     // (196:2) {#each teams as team, i}
-    function create_each_block$2(ctx) {
+    function create_each_block$3(ctx) {
     	let table;
     	let tr;
     	let td;
@@ -14288,12 +13812,12 @@ var app = (function () {
     			td = element("td");
     			create_component(team.$$.fragment);
     			t = space();
-    			add_location(td, file$3, 198, 5, 6375);
-    			add_location(tr, file$3, 197, 4, 6365);
+    			add_location(td, file$4, 198, 5, 6375);
+    			add_location(tr, file$4, 197, 4, 6365);
     			attr_dev(table, "class", "team svelte-ih46r3");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$3, 196, 3, 6316);
+    			add_location(table, file$4, 196, 3, 6316);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -14325,7 +13849,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$2.name,
+    		id: create_each_block$3.name,
     		type: "each",
     		source: "(196:2) {#each teams as team, i}",
     		ctx
@@ -14334,7 +13858,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$3(ctx) {
+    function create_fragment$4(ctx) {
     	let br0;
     	let t0;
     	let t1;
@@ -14354,15 +13878,15 @@ var app = (function () {
     	let current;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$3;
-    		return create_else_block_1$2;
+    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$4;
+    		return create_else_block_1$3;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block0 = current_block_type(ctx);
-    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$3(ctx);
-    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$3(ctx);
-    	const if_block_creators = [create_if_block$3, create_if_block_1$3, create_else_block$3];
+    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$4(ctx);
+    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$4(ctx);
+    	const if_block_creators = [create_if_block$4, create_if_block_1$4, create_else_block$4];
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
@@ -14394,15 +13918,15 @@ var app = (function () {
     			br1 = element("br");
     			t7 = space();
     			br2 = element("br");
-    			add_location(br0, file$3, 185, 0, 5831);
+    			add_location(br0, file$4, 185, 0, 5831);
     			attr_dev(div0, "class", "teams");
-    			add_location(div0, file$3, 193, 0, 6253);
+    			add_location(div0, file$4, 193, 0, 6253);
     			attr_dev(a, "href", window.location.origin + window.location.pathname + '?pga&v=' + new Date().valueOf());
     			attr_dev(a, "class", "svelte-ih46r3");
-    			add_location(a, file$3, 214, 1, 6746);
-    			add_location(div1, file$3, 213, 0, 6739);
-    			add_location(br1, file$3, 216, 0, 6857);
-    			add_location(br2, file$3, 217, 0, 6862);
+    			add_location(a, file$4, 214, 1, 6746);
+    			add_location(div1, file$4, 213, 0, 6739);
+    			add_location(br1, file$4, 216, 0, 6857);
+    			add_location(br2, file$4, 217, 0, 6862);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -14443,7 +13967,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_3$3(ctx);
+    					if_block1 = create_if_block_3$4(ctx);
     					if_block1.c();
     					if_block1.m(t2.parentNode, t2);
     				}
@@ -14456,7 +13980,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_2$3(ctx);
+    					if_block2 = create_if_block_2$4(ctx);
     					if_block2.c();
     					if_block2.m(t3.parentNode, t3);
     				}
@@ -14522,7 +14046,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$3.name,
+    		id: create_fragment$4.name,
     		type: "component",
     		source: "",
     		ctx
@@ -14531,7 +14055,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$3($$self, $$props, $$invalidate) {
+    function instance$4($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('PgaPool', slots, []);
 
@@ -14893,21 +14417,21 @@ var app = (function () {
     class PgaPool extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {});
+    		init(this, options, instance$4, create_fragment$4, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "PgaPool",
     			options,
-    			id: create_fragment$3.name
+    			id: create_fragment$4.name
     		});
     	}
     }
 
     /* src/UsOpenPool.svelte generated by Svelte v3.50.1 */
-    const file$2 = "src/UsOpenPool.svelte";
+    const file$3 = "src/UsOpenPool.svelte";
 
-    function get_each_context$1(ctx, list, i) {
+    function get_each_context$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[16] = list[i];
     	child_ctx[18] = i;
@@ -14915,7 +14439,7 @@ var app = (function () {
     }
 
     // (189:0) {:else}
-    function create_else_block_1$1(ctx) {
+    function create_else_block_1$2(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -14928,8 +14452,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$2, 189, 1, 5889);
-    			add_location(span, file$2, 189, 127, 6015);
+    			add_location(img, file$3, 189, 1, 5889);
+    			add_location(span, file$3, 189, 127, 6015);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -14943,7 +14467,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$1.name,
+    		id: create_else_block_1$2.name,
     		type: "else",
     		source: "(189:0) {:else}",
     		ctx
@@ -14953,7 +14477,7 @@ var app = (function () {
     }
 
     // (187:0) {#if tourneyName}
-    function create_if_block_4$2(ctx) {
+    function create_if_block_4$3(ctx) {
     	let h1;
 
     	const block = {
@@ -14961,7 +14485,7 @@ var app = (function () {
     			h1 = element("h1");
     			h1.textContent = "PGA Pool Projected Standings";
     			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
-    			add_location(h1, file$2, 187, 1, 5821);
+    			add_location(h1, file$3, 187, 1, 5821);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -14973,7 +14497,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$2.name,
+    		id: create_if_block_4$3.name,
     		type: "if",
     		source: "(187:0) {#if tourneyName}",
     		ctx
@@ -14983,7 +14507,7 @@ var app = (function () {
     }
 
     // (192:0) {#if livTourneyName}
-    function create_if_block_3$2(ctx) {
+    function create_if_block_3$3(ctx) {
     	let h1;
     	let t;
 
@@ -14992,7 +14516,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*livTourneyName*/ ctx[2]);
     			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
-    			add_location(h1, file$2, 191, 20, 6087);
+    			add_location(h1, file$3, 191, 20, 6087);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -15008,7 +14532,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$2.name,
+    		id: create_if_block_3$3.name,
     		type: "if",
     		source: "(192:0) {#if livTourneyName}",
     		ctx
@@ -15018,7 +14542,7 @@ var app = (function () {
     }
 
     // (193:0) {#if eurTourneyName}
-    function create_if_block_2$2(ctx) {
+    function create_if_block_2$3(ctx) {
     	let h1;
     	let t;
 
@@ -15027,7 +14551,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*eurTourneyName*/ ctx[3]);
     			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
-    			add_location(h1, file$2, 192, 20, 6163);
+    			add_location(h1, file$3, 192, 20, 6163);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -15043,7 +14567,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$2.name,
+    		id: create_if_block_2$3.name,
     		type: "if",
     		source: "(193:0) {#if eurTourneyName}",
     		ctx
@@ -15053,7 +14577,7 @@ var app = (function () {
     }
 
     // (209:1) {:else}
-    function create_else_block$2(ctx) {
+    function create_else_block$3(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -15066,8 +14590,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$2, 209, 2, 6578);
-    			add_location(span, file$2, 209, 81, 6657);
+    			add_location(img, file$3, 209, 2, 6578);
+    			add_location(span, file$3, 209, 81, 6657);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -15084,7 +14608,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$2.name,
+    		id: create_else_block$3.name,
     		type: "else",
     		source: "(209:1) {:else}",
     		ctx
@@ -15094,7 +14618,7 @@ var app = (function () {
     }
 
     // (205:17) 
-    function create_if_block_1$2(ctx) {
+    function create_if_block_1$3(ctx) {
     	let div;
     	let code;
     	let t0;
@@ -15108,9 +14632,9 @@ var app = (function () {
     			t0 = text("🚨 ");
     			t1 = text(/*error*/ ctx[4]);
     			t2 = text(" 🚨");
-    			add_location(code, file$2, 206, 3, 6531);
+    			add_location(code, file$3, 206, 3, 6531);
     			attr_dev(div, "class", "error svelte-ih46r3");
-    			add_location(div, file$2, 205, 2, 6508);
+    			add_location(div, file$3, 205, 2, 6508);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -15131,7 +14655,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$2.name,
+    		id: create_if_block_1$3.name,
     		type: "if",
     		source: "(205:17) ",
     		ctx
@@ -15141,7 +14665,7 @@ var app = (function () {
     }
 
     // (195:1) {#if teams}
-    function create_if_block$2(ctx) {
+    function create_if_block$3(ctx) {
     	let each_1_anchor;
     	let current;
     	let each_value = /*teams*/ ctx[0];
@@ -15149,7 +14673,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
     	}
 
     	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -15179,13 +14703,13 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context$1(ctx, each_value, i);
+    					const child_ctx = get_each_context$2(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     						transition_in(each_blocks[i], 1);
     					} else {
-    						each_blocks[i] = create_each_block$1(child_ctx);
+    						each_blocks[i] = create_each_block$2(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
@@ -15227,7 +14751,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$2.name,
+    		id: create_if_block$3.name,
     		type: "if",
     		source: "(195:1) {#if teams}",
     		ctx
@@ -15237,7 +14761,7 @@ var app = (function () {
     }
 
     // (196:2) {#each teams as team, i}
-    function create_each_block$1(ctx) {
+    function create_each_block$2(ctx) {
     	let table;
     	let tr;
     	let td;
@@ -15262,12 +14786,12 @@ var app = (function () {
     			td = element("td");
     			create_component(team.$$.fragment);
     			t = space();
-    			add_location(td, file$2, 198, 5, 6341);
-    			add_location(tr, file$2, 197, 4, 6331);
+    			add_location(td, file$3, 198, 5, 6341);
+    			add_location(tr, file$3, 197, 4, 6331);
     			attr_dev(table, "class", "team svelte-ih46r3");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$2, 196, 3, 6282);
+    			add_location(table, file$3, 196, 3, 6282);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -15299,7 +14823,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$1.name,
+    		id: create_each_block$2.name,
     		type: "each",
     		source: "(196:2) {#each teams as team, i}",
     		ctx
@@ -15308,7 +14832,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$2(ctx) {
+    function create_fragment$3(ctx) {
     	let br0;
     	let t0;
     	let t1;
@@ -15328,15 +14852,15 @@ var app = (function () {
     	let current;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$2;
-    		return create_else_block_1$1;
+    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$3;
+    		return create_else_block_1$2;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block0 = current_block_type(ctx);
-    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$2(ctx);
-    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$2(ctx);
-    	const if_block_creators = [create_if_block$2, create_if_block_1$2, create_else_block$2];
+    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$3(ctx);
+    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$3(ctx);
+    	const if_block_creators = [create_if_block$3, create_if_block_1$3, create_else_block$3];
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
@@ -15368,15 +14892,15 @@ var app = (function () {
     			br1 = element("br");
     			t7 = space();
     			br2 = element("br");
-    			add_location(br0, file$2, 185, 0, 5797);
+    			add_location(br0, file$3, 185, 0, 5797);
     			attr_dev(div0, "class", "teams");
-    			add_location(div0, file$2, 193, 0, 6219);
+    			add_location(div0, file$3, 193, 0, 6219);
     			attr_dev(a, "href", window.location.origin + window.location.pathname + '?usopen&v=' + new Date().valueOf());
     			attr_dev(a, "class", "svelte-ih46r3");
-    			add_location(a, file$2, 214, 1, 6712);
-    			add_location(div1, file$2, 213, 0, 6705);
-    			add_location(br1, file$2, 216, 0, 6826);
-    			add_location(br2, file$2, 217, 0, 6831);
+    			add_location(a, file$3, 214, 1, 6712);
+    			add_location(div1, file$3, 213, 0, 6705);
+    			add_location(br1, file$3, 216, 0, 6826);
+    			add_location(br2, file$3, 217, 0, 6831);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -15417,7 +14941,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_3$2(ctx);
+    					if_block1 = create_if_block_3$3(ctx);
     					if_block1.c();
     					if_block1.m(t2.parentNode, t2);
     				}
@@ -15430,7 +14954,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_2$2(ctx);
+    					if_block2 = create_if_block_2$3(ctx);
     					if_block2.c();
     					if_block2.m(t3.parentNode, t3);
     				}
@@ -15496,7 +15020,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$2.name,
+    		id: create_fragment$3.name,
     		type: "component",
     		source: "",
     		ctx
@@ -15505,7 +15029,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$2($$self, $$props, $$invalidate) {
+    function instance$3($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('UsOpenPool', slots, []);
 
@@ -15867,21 +15391,21 @@ var app = (function () {
     class UsOpenPool extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$2, create_fragment$2, safe_not_equal, {});
+    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "UsOpenPool",
     			options,
-    			id: create_fragment$2.name
+    			id: create_fragment$3.name
     		});
     	}
     }
 
     /* src/TheOpenPool.svelte generated by Svelte v3.50.1 */
-    const file$1 = "src/TheOpenPool.svelte";
+    const file$2 = "src/TheOpenPool.svelte";
 
-    function get_each_context(ctx, list, i) {
+    function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[16] = list[i];
     	child_ctx[18] = i;
@@ -15889,7 +15413,7 @@ var app = (function () {
     }
 
     // (189:0) {:else}
-    function create_else_block_1(ctx) {
+    function create_else_block_1$1(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -15902,8 +15426,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$1, 189, 1, 5894);
-    			add_location(span, file$1, 189, 127, 6020);
+    			add_location(img, file$2, 189, 1, 5894);
+    			add_location(span, file$2, 189, 127, 6020);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -15917,7 +15441,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1.name,
+    		id: create_else_block_1$1.name,
     		type: "else",
     		source: "(189:0) {:else}",
     		ctx
@@ -15927,7 +15451,7 @@ var app = (function () {
     }
 
     // (187:0) {#if tourneyName}
-    function create_if_block_4$1(ctx) {
+    function create_if_block_4$2(ctx) {
     	let h1;
 
     	const block = {
@@ -15935,7 +15459,7 @@ var app = (function () {
     			h1 = element("h1");
     			h1.textContent = "The Open Pool Projected Standings";
     			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
-    			add_location(h1, file$1, 187, 1, 5821);
+    			add_location(h1, file$2, 187, 1, 5821);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -15947,7 +15471,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$1.name,
+    		id: create_if_block_4$2.name,
     		type: "if",
     		source: "(187:0) {#if tourneyName}",
     		ctx
@@ -15957,7 +15481,7 @@ var app = (function () {
     }
 
     // (192:0) {#if livTourneyName}
-    function create_if_block_3$1(ctx) {
+    function create_if_block_3$2(ctx) {
     	let h1;
     	let t;
 
@@ -15966,7 +15490,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*livTourneyName*/ ctx[2]);
     			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
-    			add_location(h1, file$1, 191, 20, 6092);
+    			add_location(h1, file$2, 191, 20, 6092);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -15982,7 +15506,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$1.name,
+    		id: create_if_block_3$2.name,
     		type: "if",
     		source: "(192:0) {#if livTourneyName}",
     		ctx
@@ -15992,7 +15516,7 @@ var app = (function () {
     }
 
     // (193:0) {#if eurTourneyName}
-    function create_if_block_2$1(ctx) {
+    function create_if_block_2$2(ctx) {
     	let h1;
     	let t;
 
@@ -16001,7 +15525,7 @@ var app = (function () {
     			h1 = element("h1");
     			t = text(/*eurTourneyName*/ ctx[3]);
     			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
-    			add_location(h1, file$1, 192, 20, 6168);
+    			add_location(h1, file$2, 192, 20, 6168);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -16017,7 +15541,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2$1.name,
+    		id: create_if_block_2$2.name,
     		type: "if",
     		source: "(193:0) {#if eurTourneyName}",
     		ctx
@@ -16027,7 +15551,7 @@ var app = (function () {
     }
 
     // (209:1) {:else}
-    function create_else_block$1(ctx) {
+    function create_else_block$2(ctx) {
     	let img;
     	let img_src_value;
     	let span;
@@ -16040,8 +15564,8 @@ var app = (function () {
     			attr_dev(img, "class", "sheets-icon");
     			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Loading");
-    			add_location(img, file$1, 209, 2, 6583);
-    			add_location(span, file$1, 209, 81, 6662);
+    			add_location(img, file$2, 209, 2, 6583);
+    			add_location(span, file$2, 209, 81, 6662);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -16058,7 +15582,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$1.name,
+    		id: create_else_block$2.name,
     		type: "else",
     		source: "(209:1) {:else}",
     		ctx
@@ -16068,7 +15592,7 @@ var app = (function () {
     }
 
     // (205:17) 
-    function create_if_block_1$1(ctx) {
+    function create_if_block_1$2(ctx) {
     	let div;
     	let code;
     	let t0;
@@ -16082,9 +15606,9 @@ var app = (function () {
     			t0 = text("🚨 ");
     			t1 = text(/*error*/ ctx[4]);
     			t2 = text(" 🚨");
-    			add_location(code, file$1, 206, 3, 6536);
+    			add_location(code, file$2, 206, 3, 6536);
     			attr_dev(div, "class", "error svelte-ih46r3");
-    			add_location(div, file$1, 205, 2, 6513);
+    			add_location(div, file$2, 205, 2, 6513);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16105,7 +15629,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1$1.name,
+    		id: create_if_block_1$2.name,
     		type: "if",
     		source: "(205:17) ",
     		ctx
@@ -16115,7 +15639,7 @@ var app = (function () {
     }
 
     // (195:1) {#if teams}
-    function create_if_block$1(ctx) {
+    function create_if_block$2(ctx) {
     	let each_1_anchor;
     	let current;
     	let each_value = /*teams*/ ctx[0];
@@ -16123,7 +15647,7 @@ var app = (function () {
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
     	}
 
     	const out = i => transition_out(each_blocks[i], 1, 1, () => {
@@ -16153,13 +15677,13 @@ var app = (function () {
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context(ctx, each_value, i);
+    					const child_ctx = get_each_context$1(ctx, each_value, i);
 
     					if (each_blocks[i]) {
     						each_blocks[i].p(child_ctx, dirty);
     						transition_in(each_blocks[i], 1);
     					} else {
-    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i] = create_each_block$1(child_ctx);
     						each_blocks[i].c();
     						transition_in(each_blocks[i], 1);
     						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
@@ -16201,7 +15725,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block$2.name,
     		type: "if",
     		source: "(195:1) {#if teams}",
     		ctx
@@ -16211,7 +15735,7 @@ var app = (function () {
     }
 
     // (196:2) {#each teams as team, i}
-    function create_each_block(ctx) {
+    function create_each_block$1(ctx) {
     	let table;
     	let tr;
     	let td;
@@ -16236,12 +15760,12 @@ var app = (function () {
     			td = element("td");
     			create_component(team.$$.fragment);
     			t = space();
-    			add_location(td, file$1, 198, 5, 6346);
-    			add_location(tr, file$1, 197, 4, 6336);
+    			add_location(td, file$2, 198, 5, 6346);
+    			add_location(tr, file$2, 197, 4, 6336);
     			attr_dev(table, "class", "team svelte-ih46r3");
     			attr_dev(table, "width", "100%");
     			attr_dev(table, "border", "0");
-    			add_location(table, file$1, 196, 3, 6287);
+    			add_location(table, file$2, 196, 3, 6287);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, table, anchor);
@@ -16273,7 +15797,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block.name,
+    		id: create_each_block$1.name,
     		type: "each",
     		source: "(196:2) {#each teams as team, i}",
     		ctx
@@ -16282,7 +15806,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$1(ctx) {
+    function create_fragment$2(ctx) {
     	let br0;
     	let t0;
     	let t1;
@@ -16302,15 +15826,15 @@ var app = (function () {
     	let current;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$1;
-    		return create_else_block_1;
+    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$2;
+    		return create_else_block_1$1;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block0 = current_block_type(ctx);
-    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$1(ctx);
-    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$1(ctx);
-    	const if_block_creators = [create_if_block$1, create_if_block_1$1, create_else_block$1];
+    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$2(ctx);
+    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$2(ctx);
+    	const if_block_creators = [create_if_block$2, create_if_block_1$2, create_else_block$2];
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
@@ -16342,15 +15866,15 @@ var app = (function () {
     			br1 = element("br");
     			t7 = space();
     			br2 = element("br");
-    			add_location(br0, file$1, 185, 0, 5797);
+    			add_location(br0, file$2, 185, 0, 5797);
     			attr_dev(div0, "class", "teams");
-    			add_location(div0, file$1, 193, 0, 6224);
+    			add_location(div0, file$2, 193, 0, 6224);
     			attr_dev(a, "href", window.location.origin + window.location.pathname + '?theopen&v=' + new Date().valueOf());
     			attr_dev(a, "class", "svelte-ih46r3");
-    			add_location(a, file$1, 214, 1, 6717);
-    			add_location(div1, file$1, 213, 0, 6710);
-    			add_location(br1, file$1, 216, 0, 6832);
-    			add_location(br2, file$1, 217, 0, 6837);
+    			add_location(a, file$2, 214, 1, 6717);
+    			add_location(div1, file$2, 213, 0, 6710);
+    			add_location(br1, file$2, 216, 0, 6832);
+    			add_location(br2, file$2, 217, 0, 6837);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -16391,7 +15915,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_3$1(ctx);
+    					if_block1 = create_if_block_3$2(ctx);
     					if_block1.c();
     					if_block1.m(t2.parentNode, t2);
     				}
@@ -16404,7 +15928,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_2$1(ctx);
+    					if_block2 = create_if_block_2$2(ctx);
     					if_block2.c();
     					if_block2.m(t3.parentNode, t3);
     				}
@@ -16470,7 +15994,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$1.name,
+    		id: create_fragment$2.name,
     		type: "component",
     		source: "",
     		ctx
@@ -16479,7 +16003,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$1($$self, $$props, $$invalidate) {
+    function instance$2($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('TheOpenPool', slots, []);
 
@@ -16841,11 +16365,979 @@ var app = (function () {
     class TheOpenPool extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {});
+    		init(this, options, instance$2, create_fragment$2, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "TheOpenPool",
+    			options,
+    			id: create_fragment$2.name
+    		});
+    	}
+    }
+
+    /* src/PellePoolMasters.svelte generated by Svelte v3.50.1 */
+
+    const { console: console_1$1 } = globals;
+    const file$1 = "src/PellePoolMasters.svelte";
+
+    function get_each_context(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[16] = list[i];
+    	child_ctx[18] = i;
+    	return child_ctx;
+    }
+
+    // (186:0) {:else}
+    function create_else_block_1(ctx) {
+    	let img;
+    	let img_src_value;
+    	let span;
+
+    	const block = {
+    		c: function create() {
+    			img = element("img");
+    			span = element("span");
+    			span.textContent = " Loading current tournament";
+    			attr_dev(img, "class", "sheets-icon");
+    			if (!src_url_equal(img.src, img_src_value = "https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Loading");
+    			add_location(img, file$1, 186, 1, 5793);
+    			add_location(span, file$1, 186, 127, 5919);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, img, anchor);
+    			insert_dev(target, span, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(img);
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_1.name,
+    		type: "else",
+    		source: "(186:0) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (184:0) {#if tourneyName}
+    function create_if_block_4$1(ctx) {
+    	let h1;
+
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			h1.textContent = "Masters Pool Projected Standings";
+    			attr_dev(h1, "class", "tourney-name svelte-ih46r3");
+    			add_location(h1, file$1, 184, 1, 5721);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_4$1.name,
+    		type: "if",
+    		source: "(184:0) {#if tourneyName}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (189:0) {#if livTourneyName}
+    function create_if_block_3$1(ctx) {
+    	let h1;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			t = text(/*livTourneyName*/ ctx[2]);
+    			attr_dev(h1, "class", "tourney-name liv svelte-ih46r3");
+    			add_location(h1, file$1, 188, 20, 5991);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    			append_dev(h1, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*livTourneyName*/ 4) set_data_dev(t, /*livTourneyName*/ ctx[2]);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_3$1.name,
+    		type: "if",
+    		source: "(189:0) {#if livTourneyName}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (190:0) {#if eurTourneyName}
+    function create_if_block_2$1(ctx) {
+    	let h1;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			t = text(/*eurTourneyName*/ ctx[3]);
+    			attr_dev(h1, "class", "tourney-name eur svelte-ih46r3");
+    			add_location(h1, file$1, 189, 20, 6067);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    			append_dev(h1, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*eurTourneyName*/ 8) set_data_dev(t, /*eurTourneyName*/ ctx[3]);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2$1.name,
+    		type: "if",
+    		source: "(190:0) {#if eurTourneyName}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (206:1) {:else}
+    function create_else_block$1(ctx) {
+    	let img;
+    	let img_src_value;
+    	let span;
+
+    	const block = {
+    		c: function create() {
+    			img = element("img");
+    			span = element("span");
+    			span.textContent = " Scraping ESPN";
+    			attr_dev(img, "class", "sheets-icon");
+    			if (!src_url_equal(img.src, img_src_value = "https://a.espncdn.com/favicon.ico")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "Loading");
+    			add_location(img, file$1, 206, 2, 6482);
+    			add_location(span, file$1, 206, 81, 6561);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, img, anchor);
+    			insert_dev(target, span, anchor);
+    		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(img);
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block$1.name,
+    		type: "else",
+    		source: "(206:1) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (202:17) 
+    function create_if_block_1$1(ctx) {
+    	let div;
+    	let code;
+    	let t0;
+    	let t1;
+    	let t2;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			code = element("code");
+    			t0 = text("🚨 ");
+    			t1 = text(/*error*/ ctx[4]);
+    			t2 = text(" 🚨");
+    			add_location(code, file$1, 203, 3, 6435);
+    			attr_dev(div, "class", "error svelte-ih46r3");
+    			add_location(div, file$1, 202, 2, 6412);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, code);
+    			append_dev(code, t0);
+    			append_dev(code, t1);
+    			append_dev(code, t2);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*error*/ 16) set_data_dev(t1, /*error*/ ctx[4]);
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1$1.name,
+    		type: "if",
+    		source: "(202:17) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (192:1) {#if teams}
+    function create_if_block$1(ctx) {
+    	let each_1_anchor;
+    	let current;
+    	let each_value = /*teams*/ ctx[0];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
+
+    	const block = {
+    		c: function create() {
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*teams*/ 1) {
+    				each_value = /*teams*/ ctx[0];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$1.name,
+    		type: "if",
+    		source: "(192:1) {#if teams}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (193:2) {#each teams as team, i}
+    function create_each_block(ctx) {
+    	let table;
+    	let tr;
+    	let td;
+    	let team;
+    	let t;
+    	let current;
+
+    	team = new Team({
+    			props: {
+    				team: /*team*/ ctx[16],
+    				placeNumber: /*i*/ ctx[18] + 1,
+    				isFavorite: false,
+    				activeGolferCounts: "TEST!"
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			table = element("table");
+    			tr = element("tr");
+    			td = element("td");
+    			create_component(team.$$.fragment);
+    			t = space();
+    			add_location(td, file$1, 195, 5, 6245);
+    			add_location(tr, file$1, 194, 4, 6235);
+    			attr_dev(table, "class", "team svelte-ih46r3");
+    			attr_dev(table, "width", "100%");
+    			attr_dev(table, "border", "0");
+    			add_location(table, file$1, 193, 3, 6186);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, table, anchor);
+    			append_dev(table, tr);
+    			append_dev(tr, td);
+    			mount_component(team, td, null);
+    			append_dev(table, t);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const team_changes = {};
+    			if (dirty & /*teams*/ 1) team_changes.team = /*team*/ ctx[16];
+    			team.$set(team_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(team.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(team.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(table);
+    			destroy_component(team);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(193:2) {#each teams as team, i}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$1(ctx) {
+    	let br0;
+    	let t0;
+    	let t1;
+    	let t2;
+    	let t3;
+    	let div0;
+    	let current_block_type_index;
+    	let if_block3;
+    	let t4;
+    	let div1;
+    	let a;
+    	let t5;
+    	let t6;
+    	let br1;
+    	let t7;
+    	let br2;
+    	let current;
+
+    	function select_block_type(ctx, dirty) {
+    		if (/*tourneyName*/ ctx[1]) return create_if_block_4$1;
+    		return create_else_block_1;
+    	}
+
+    	let current_block_type = select_block_type(ctx);
+    	let if_block0 = current_block_type(ctx);
+    	let if_block1 = /*livTourneyName*/ ctx[2] && create_if_block_3$1(ctx);
+    	let if_block2 = /*eurTourneyName*/ ctx[3] && create_if_block_2$1(ctx);
+    	const if_block_creators = [create_if_block$1, create_if_block_1$1, create_else_block$1];
+    	const if_blocks = [];
+
+    	function select_block_type_1(ctx, dirty) {
+    		if (/*teams*/ ctx[0]) return 0;
+    		if (/*error*/ ctx[4]) return 1;
+    		return 2;
+    	}
+
+    	current_block_type_index = select_block_type_1(ctx);
+    	if_block3 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+
+    	const block = {
+    		c: function create() {
+    			br0 = element("br");
+    			t0 = space();
+    			if_block0.c();
+    			t1 = space();
+    			if (if_block1) if_block1.c();
+    			t2 = space();
+    			if (if_block2) if_block2.c();
+    			t3 = space();
+    			div0 = element("div");
+    			if_block3.c();
+    			t4 = space();
+    			div1 = element("div");
+    			a = element("a");
+    			t5 = text("🔄");
+    			t6 = space();
+    			br1 = element("br");
+    			t7 = space();
+    			br2 = element("br");
+    			add_location(br0, file$1, 182, 0, 5697);
+    			attr_dev(div0, "class", "teams");
+    			add_location(div0, file$1, 190, 0, 6123);
+    			attr_dev(a, "href", window.location.origin + window.location.pathname + '?masters&v=' + new Date().valueOf());
+    			attr_dev(a, "class", "svelte-ih46r3");
+    			add_location(a, file$1, 211, 1, 6616);
+    			add_location(div1, file$1, 210, 0, 6609);
+    			add_location(br1, file$1, 213, 0, 6731);
+    			add_location(br2, file$1, 214, 0, 6736);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, br0, anchor);
+    			insert_dev(target, t0, anchor);
+    			if_block0.m(target, anchor);
+    			insert_dev(target, t1, anchor);
+    			if (if_block1) if_block1.m(target, anchor);
+    			insert_dev(target, t2, anchor);
+    			if (if_block2) if_block2.m(target, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div0, anchor);
+    			if_blocks[current_block_type_index].m(div0, null);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, a);
+    			append_dev(a, t5);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, br1, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, br2, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (current_block_type !== (current_block_type = select_block_type(ctx))) {
+    				if_block0.d(1);
+    				if_block0 = current_block_type(ctx);
+
+    				if (if_block0) {
+    					if_block0.c();
+    					if_block0.m(t1.parentNode, t1);
+    				}
+    			}
+
+    			if (/*livTourneyName*/ ctx[2]) {
+    				if (if_block1) {
+    					if_block1.p(ctx, dirty);
+    				} else {
+    					if_block1 = create_if_block_3$1(ctx);
+    					if_block1.c();
+    					if_block1.m(t2.parentNode, t2);
+    				}
+    			} else if (if_block1) {
+    				if_block1.d(1);
+    				if_block1 = null;
+    			}
+
+    			if (/*eurTourneyName*/ ctx[3]) {
+    				if (if_block2) {
+    					if_block2.p(ctx, dirty);
+    				} else {
+    					if_block2 = create_if_block_2$1(ctx);
+    					if_block2.c();
+    					if_block2.m(t3.parentNode, t3);
+    				}
+    			} else if (if_block2) {
+    				if_block2.d(1);
+    				if_block2 = null;
+    			}
+
+    			let previous_block_index = current_block_type_index;
+    			current_block_type_index = select_block_type_1(ctx);
+
+    			if (current_block_type_index === previous_block_index) {
+    				if_blocks[current_block_type_index].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
+    					if_blocks[previous_block_index] = null;
+    				});
+
+    				check_outros();
+    				if_block3 = if_blocks[current_block_type_index];
+
+    				if (!if_block3) {
+    					if_block3 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    					if_block3.c();
+    				} else {
+    					if_block3.p(ctx, dirty);
+    				}
+
+    				transition_in(if_block3, 1);
+    				if_block3.m(div0, null);
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block3);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block3);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(br0);
+    			if (detaching) detach_dev(t0);
+    			if_block0.d(detaching);
+    			if (detaching) detach_dev(t1);
+    			if (if_block1) if_block1.d(detaching);
+    			if (detaching) detach_dev(t2);
+    			if (if_block2) if_block2.d(detaching);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div0);
+    			if_blocks[current_block_type_index].d();
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(br1);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(br2);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$1.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$1($$self, $$props, $$invalidate) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots('PellePoolMasters', slots, []);
+
+    	let teams,
+    		leaderboard,
+    		favoriteTeam,
+    		blurb,
+    		tournaments,
+    		golfers,
+    		rawTeams,
+    		processedTeams;
+
+    	let tourneyName, livTourneyName, eurTourneyName;
+    	let resultsPlayers = [];
+    	let rawResults = window.location.href.includes("results");
+    	let error;
+
+    	// onMount do all of our async functions
+    	onMount(async () => {
+    		try {
+    			rawTeams = await getTeamRosters();
+    			$$invalidate(0, teams = await hitESPN(rawTeams, "pga"));
+    			$$invalidate(0, teams = await hitESPN(rawTeams, "liv"));
+    			$$invalidate(0, teams = await hitESPN(rawTeams, "eur"));
+    			await teams.sort((a, b) => b.totalMoney - a.totalMoney);
+
+    			teams.forEach(team => {
+    				team.roster = team.roster.sort((a, b) => b.sort - a.sort);
+    			});
+    		} catch(e) {
+    			$$invalidate(4, error = e);
+    		}
+    	});
+
+    	// Hit ESPN for the standings
+    	const hitESPN = async (rawTeams, leagueSlug) => {
+    		const endpoint = `https://site.web.api.espn.com/apis/site/v2/sports/golf/leaderboard?league=` + leagueSlug;
+    		const response = await fetch(endpoint);
+    		const json = await response.json();
+
+    		// console.log(json)
+    		if (json.events.length == 0 || json.events[0].name == "Hero Cup") {
+    			var dateDiff = -100;
+    		} else {
+    			var dateDiff = Math.floor((new Date() - Date.parse(json.events[0].endDate)) / (1000 * 60 * 60 * 24));
+    		}
+
+    		if (dateDiff >= -4 && dateDiff <= 4) {
+    			switch (leagueSlug) {
+    				case "pga":
+    					$$invalidate(1, tourneyName = json.events[0].name);
+    					break;
+    				case "liv":
+    					$$invalidate(2, livTourneyName = json.events[0].name);
+    					break;
+    				case "eur":
+    					$$invalidate(3, eurTourneyName = json.events[0].name);
+    					break;
+    			}
+
+    			golfers = json.events[0].competitions[0].competitors;
+
+    			golfers = golfers.sort((a, b) => {
+    				return Number(a.status.position.id) - Number(b.status.position.id);
+    			});
+
+    			var purse = json.events[0].purse;
+
+    			var payoutPercentages = [
+    				null,
+    				0.18,
+    				0.109,
+    				0.069,
+    				0.049,
+    				0.041,
+    				0.03625,
+    				0.03375,
+    				0.03125,
+    				0.02925,
+    				0.02725,
+    				0.02525,
+    				0.02325,
+    				0.02125,
+    				0.01925,
+    				0.01825,
+    				0.01725,
+    				0.01625,
+    				0.01525,
+    				0.01425,
+    				0.01325,
+    				0.01225,
+    				0.01125,
+    				0.01045,
+    				0.00965,
+    				0.00885,
+    				0.00805,
+    				0.00775,
+    				0.00745,
+    				0.00715,
+    				0.00685,
+    				0.00655,
+    				0.00625,
+    				0.00595,
+    				0.0057,
+    				0.00545,
+    				0.0052,
+    				0.00495,
+    				0.00475,
+    				0.00455,
+    				0.00435,
+    				0.00415,
+    				0.00395,
+    				0.00375,
+    				0.00355,
+    				0.00335,
+    				0.00315,
+    				0.00295,
+    				0.00279,
+    				0.00265,
+    				0.00257,
+    				0.00251,
+    				0.00245,
+    				0.00241,
+    				0.00237,
+    				0.00235,
+    				0.00233,
+    				0.00231,
+    				0.00229,
+    				0.00227,
+    				0.00225,
+    				0.00223,
+    				0.00221,
+    				0.00219,
+    				0.00217,
+    				0.00215
+    			];
+
+    			const livPayoutPercentages = [
+    				null,
+    				0.20000,
+    				0.10625,
+    				0.07500,
+    				0.05250,
+    				0.04875,
+    				0.04000,
+    				0.03375,
+    				0.03125,
+    				0.02900,
+    				0.02800,
+    				0.02700,
+    				0.02250,
+    				0.01800,
+    				0.01350,
+    				0.01250,
+    				0.01200,
+    				0.01160,
+    				0.01130,
+    				0.01100,
+    				0.01000,
+    				0.00900,
+    				0.00860,
+    				0.00850,
+    				0.00840,
+    				0.00830,
+    				0.00820,
+    				0.00810,
+    				0.00800,
+    				0.00790,
+    				0.00780,
+    				0.00770,
+    				0.00760,
+    				0.00750,
+    				0.00740,
+    				0.00730,
+    				0.00720,
+    				0.00710,
+    				0.00700,
+    				0.00690,
+    				0.00680,
+    				0.00670,
+    				0.00660,
+    				0.00650,
+    				0.00640,
+    				0.00630,
+    				0.00620,
+    				0.00610,
+    				0.00600
+    			];
+
+    			golfers.forEach(g => {
+    				if (leagueSlug == "liv") {
+    					g.estimatedEarnings = livPayoutPercentages[g.status.position.id] * purse * 0.27;
+    				} else {
+    					g.estimatedEarnings = payoutPercentages[g.status.position.id] * 18000000;
+    				}
+
+    				if (isNaN(g.estimatedEarnings)) {
+    					g.estimatedEarnings = 0;
+    				}
+    			});
+
+    			await golfers.map(g => g.id);
+
+    			rawTeams.forEach(team => {
+    				team.roster.forEach(player => {
+    					const matches = golfers.filter(g => g.id == player.espnId);
+
+    					if (matches.length > 0) {
+    						const golfer = matches[0];
+    						console.log(golfer);
+    						player.isPlaying = true;
+    						player.position = golfer.status.position.displayName;
+    						player.projMoney = golfer.estimatedEarnings;
+
+    						if (golfer.estimatedEarnings) {
+    							team.totalMoney += golfer.estimatedEarnings;
+    						}
+
+    						player.pgaStatus = golfer.status.shortDetail;
+    						player.total = golfer.score.displayValue;
+    						player.today = golfer.linescores.at(-1).displayValue;
+    						player.thru = golfer.status.thru;
+    						player.league = leagueSlug;
+    						player.sort = golfer.estimatedEarnings;
+    						team.activeGolferCounts[leagueSlug] += 1;
+    					}
+    				});
+    			});
+    		}
+
+    		return rawTeams;
+    	};
+
+    	// Get our team rosters from the Google Sheet / KVDB
+    	const getTeamRosters = async () => {
+    		let spreadsheet_id = "1yI7BL7-Rk-1Y9pJ4e1Oxa2-w6pPulcQVC-IbRBSy6ac";
+    		let gid = "583080212";
+    		let endpoint = `https://docs.google.com/spreadsheets/d/` + spreadsheet_id + `/gviz/tq?tqx=out:json&tq&gid=` + gid;
+
+    		// let endpoint = "https://kvdb.io/vRrcDLPTr4WWpVTJxim1H/rosters" + "?timestamp=" + Date.now()
+    		const response = await fetch(endpoint);
+
+    		const text = await response.text();
+    		const data = await JSON.parse(text.substring(47).slice(0, -2)).table;
+    		const cols = data.cols.map(col => col.label);
+
+    		// Grab all the players
+    		const players = [];
+
+    		data.rows.forEach(row => {
+    			const obj = {};
+
+    			cols.forEach((col, i) => {
+    				obj[col] = row.c[i] == null ? null : row.c[i].v;
+    			});
+
+    			if (obj["Team"] != null && obj["Team"] != " ()") {
+    				players.push(obj);
+    			}
+    		});
+
+    		// Get unique team names
+    		let teamNames = [...new Set(players.map(p => p.Team))];
+
+    		// Assign rosters to teams
+    		let teams = [];
+
+    		teamNames.forEach(team => {
+    			let obj = {
+    				"teamName": team.replace(")", "").split(" (")[0],
+    				"owner": team.replace(")", "").split(" (")[1],
+    				"roster": []
+    			};
+
+    			players.forEach(player => {
+    				if (player.Team == team) {
+    					obj.roster.push({
+    						"id": player.PGAID + "",
+    						"name": player.Golfers,
+    						"espnId": player.ESPNID
+    					});
+    				}
+    			});
+
+    			teams.push(obj);
+    		});
+
+    		teams.forEach(t => t.totalMoney = 0);
+
+    		teams.forEach(t => {
+    			t.roster.forEach(p => p.sort = 0);
+    			t.activeGolferCounts = { ["pga"]: 0, ["liv"]: 0, ["eur"]: 0 };
+    		});
+
+    		return teams;
+    	};
+
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1$1.warn(`<PellePoolMasters> was created with unknown prop '${key}'`);
+    	});
+
+    	$$self.$capture_state = () => ({
+    		onMount,
+    		Team,
+    		moment,
+    		ResultsTable,
+    		teams,
+    		leaderboard,
+    		favoriteTeam,
+    		blurb,
+    		tournaments,
+    		golfers,
+    		rawTeams,
+    		processedTeams,
+    		tourneyName,
+    		livTourneyName,
+    		eurTourneyName,
+    		resultsPlayers,
+    		rawResults,
+    		error,
+    		hitESPN,
+    		getTeamRosters
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ('teams' in $$props) $$invalidate(0, teams = $$props.teams);
+    		if ('leaderboard' in $$props) leaderboard = $$props.leaderboard;
+    		if ('favoriteTeam' in $$props) favoriteTeam = $$props.favoriteTeam;
+    		if ('blurb' in $$props) blurb = $$props.blurb;
+    		if ('tournaments' in $$props) tournaments = $$props.tournaments;
+    		if ('golfers' in $$props) golfers = $$props.golfers;
+    		if ('rawTeams' in $$props) rawTeams = $$props.rawTeams;
+    		if ('processedTeams' in $$props) processedTeams = $$props.processedTeams;
+    		if ('tourneyName' in $$props) $$invalidate(1, tourneyName = $$props.tourneyName);
+    		if ('livTourneyName' in $$props) $$invalidate(2, livTourneyName = $$props.livTourneyName);
+    		if ('eurTourneyName' in $$props) $$invalidate(3, eurTourneyName = $$props.eurTourneyName);
+    		if ('resultsPlayers' in $$props) resultsPlayers = $$props.resultsPlayers;
+    		if ('rawResults' in $$props) rawResults = $$props.rawResults;
+    		if ('error' in $$props) $$invalidate(4, error = $$props.error);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [teams, tourneyName, livTourneyName, eurTourneyName, error];
+    }
+
+    class PellePoolMasters extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "PellePoolMasters",
     			options,
     			id: create_fragment$1.name
     		});
@@ -16853,9 +17345,11 @@ var app = (function () {
     }
 
     /* src/App.svelte generated by Svelte v3.50.1 */
+
+    const { console: console_1 } = globals;
     const file = "src/App.svelte";
 
-    // (49:0) {:else}
+    // (51:0) {:else}
     function create_else_block(ctx) {
     	let div;
     	let picker;
@@ -16902,11 +17396,11 @@ var app = (function () {
     			br1 = element("br");
     			t1 = space();
     			if (if_block) if_block.c();
-    			add_location(br0, file, 51, 2, 1421);
-    			add_location(br1, file, 51, 6, 1425);
+    			add_location(br0, file, 53, 2, 1507);
+    			add_location(br1, file, 53, 6, 1511);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 49, 1, 1346);
+    			add_location(div, file, 51, 1, 1432);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16986,15 +17480,62 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(49:0) {:else}",
+    		source: "(51:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (45:22) 
+    // (47:27) 
     function create_if_block_5(ctx) {
+    	let div;
+    	let pellepoolmasters;
+    	let current;
+    	pellepoolmasters = new PellePoolMasters({ $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			create_component(pellepoolmasters.$$.fragment);
+    			attr_dev(div, "id", "main");
+    			attr_dev(div, "class", "svelte-ouw46w");
+    			add_location(div, file, 47, 1, 1376);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			mount_component(pellepoolmasters, div, null);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(pellepoolmasters.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(pellepoolmasters.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_component(pellepoolmasters);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_5.name,
+    		type: "if",
+    		source: "(47:27) ",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (43:22) 
+    function create_if_block_4(ctx) {
     	let div;
     	let theopenpool;
     	let current;
@@ -17006,7 +17547,7 @@ var app = (function () {
     			create_component(theopenpool.$$.fragment);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 45, 1, 1295);
+    			add_location(div, file, 43, 1, 1305);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -17031,17 +17572,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_5.name,
+    		id: create_if_block_4.name,
     		type: "if",
-    		source: "(45:22) ",
+    		source: "(43:22) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:21) 
-    function create_if_block_4(ctx) {
+    // (39:21) 
+    function create_if_block_3(ctx) {
     	let div;
     	let usopenpool;
     	let current;
@@ -17053,7 +17594,7 @@ var app = (function () {
     			create_component(usopenpool.$$.fragment);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 41, 1, 1230);
+    			add_location(div, file, 39, 1, 1240);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -17078,17 +17619,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4.name,
+    		id: create_if_block_3.name,
     		type: "if",
-    		source: "(41:21) ",
+    		source: "(39:21) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:18) 
-    function create_if_block_3(ctx) {
+    // (35:18) 
+    function create_if_block_2(ctx) {
     	let div;
     	let pgapool;
     	let current;
@@ -17100,7 +17641,7 @@ var app = (function () {
     			create_component(pgapool.$$.fragment);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 37, 1, 1169);
+    			add_location(div, file, 35, 1, 1179);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -17125,17 +17666,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3.name,
+    		id: create_if_block_2.name,
     		type: "if",
-    		source: "(37:18) ",
+    		source: "(35:18) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:22) 
-    function create_if_block_2(ctx) {
+    // (31:22) 
+    function create_if_block_1(ctx) {
     	let div;
     	let masterspool;
     	let current;
@@ -17147,7 +17688,7 @@ var app = (function () {
     			create_component(masterspool.$$.fragment);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 33, 1, 1107);
+    			add_location(div, file, 31, 1, 1117);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -17172,63 +17713,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_2.name,
-    		type: "if",
-    		source: "(33:22) ",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (29:18) 
-    function create_if_block_1(ctx) {
-    	let div;
-    	let nba;
-    	let current;
-    	nba = new Nba({ $$inline: true });
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-    			create_component(nba.$$.fragment);
-    			attr_dev(div, "id", "main");
-    			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 29, 1, 1049);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			mount_component(nba, div, null);
-    			current = true;
-    		},
-    		p: noop,
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(nba.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(nba.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			destroy_component(nba);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(29:18) ",
+    		source: "(31:22) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (25:0) {#if confidencePool}
+    // (27:0) {#if confidencePool}
     function create_if_block(ctx) {
     	let div;
     	let confidencepool;
@@ -17241,7 +17735,7 @@ var app = (function () {
     			create_component(confidencepool.$$.fragment);
     			attr_dev(div, "id", "main");
     			attr_dev(div, "class", "svelte-ouw46w");
-    			add_location(div, file, 25, 1, 984);
+    			add_location(div, file, 27, 1, 1048);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -17268,14 +17762,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(25:0) {#if confidencePool}",
+    		source: "(27:0) {#if confidencePool}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (57:38) 
+    // (59:38) 
     function create_if_block_7(ctx) {
     	let overall;
     	let current;
@@ -17307,14 +17801,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(57:38) ",
+    		source: "(59:38) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (54:2) {#if currentPage === "Weekly"}
+    // (56:2) {#if currentPage === "Weekly"}
     function create_if_block_6(ctx) {
     	let weeklyespn;
     	let current;
@@ -17346,7 +17840,7 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(54:2) {#if currentPage === \\\"Weekly\\\"}",
+    		source: "(56:2) {#if currentPage === \\\"Weekly\\\"}",
     		ctx
     	});
 
@@ -17373,11 +17867,11 @@ var app = (function () {
 
     	function select_block_type(ctx, dirty) {
     		if (/*confidencePool*/ ctx[2]) return 0;
-    		if (/*nbaPage*/ ctx[3]) return 1;
-    		if (/*mastersPool*/ ctx[4]) return 2;
-    		if (/*pgaPool*/ ctx[5]) return 3;
-    		if (/*usOpenPool*/ ctx[6]) return 4;
-    		if (/*theOpenPool*/ ctx[7]) return 5;
+    		if (/*mastersPool*/ ctx[3]) return 1;
+    		if (/*pgaPool*/ ctx[4]) return 2;
+    		if (/*usOpenPool*/ ctx[5]) return 3;
+    		if (/*theOpenPool*/ ctx[6]) return 4;
+    		if (/*pellePoolMasters*/ ctx[7]) return 5;
     		return 6;
     	}
 
@@ -17429,18 +17923,19 @@ var app = (function () {
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('App', slots, []);
+    	console.log("Hello!");
     	let pages = ["Weekly", "Overall"];
     	let currentPage = "Weekly";
     	let confidencePool = window.location.href.includes("?confidence");
-    	let nbaPage = window.location.href.includes("?nba");
     	let mastersPool = window.location.href.includes("?masters");
     	let pgaPool = window.location.href.includes("?pga");
     	let usOpenPool = window.location.href.includes("?usopen");
     	let theOpenPool = window.location.href.includes("?theopen");
+    	let pellePoolMasters = window.location.href.includes("?pellemasters");
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<App> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
     	function picker_activePage_binding(value) {
@@ -17454,31 +17949,31 @@ var app = (function () {
     		WeeklyEspn,
     		Overall,
     		ConfidencePool,
-    		Nba,
     		MastersPool,
     		PgaPool,
     		UsOpenPool,
     		TheOpenPool,
+    		PellePoolMasters,
     		onMount,
     		pages,
     		currentPage,
     		confidencePool,
-    		nbaPage,
     		mastersPool,
     		pgaPool,
     		usOpenPool,
-    		theOpenPool
+    		theOpenPool,
+    		pellePoolMasters
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('pages' in $$props) $$invalidate(1, pages = $$props.pages);
     		if ('currentPage' in $$props) $$invalidate(0, currentPage = $$props.currentPage);
     		if ('confidencePool' in $$props) $$invalidate(2, confidencePool = $$props.confidencePool);
-    		if ('nbaPage' in $$props) $$invalidate(3, nbaPage = $$props.nbaPage);
-    		if ('mastersPool' in $$props) $$invalidate(4, mastersPool = $$props.mastersPool);
-    		if ('pgaPool' in $$props) $$invalidate(5, pgaPool = $$props.pgaPool);
-    		if ('usOpenPool' in $$props) $$invalidate(6, usOpenPool = $$props.usOpenPool);
-    		if ('theOpenPool' in $$props) $$invalidate(7, theOpenPool = $$props.theOpenPool);
+    		if ('mastersPool' in $$props) $$invalidate(3, mastersPool = $$props.mastersPool);
+    		if ('pgaPool' in $$props) $$invalidate(4, pgaPool = $$props.pgaPool);
+    		if ('usOpenPool' in $$props) $$invalidate(5, usOpenPool = $$props.usOpenPool);
+    		if ('theOpenPool' in $$props) $$invalidate(6, theOpenPool = $$props.theOpenPool);
+    		if ('pellePoolMasters' in $$props) $$invalidate(7, pellePoolMasters = $$props.pellePoolMasters);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -17489,11 +17984,11 @@ var app = (function () {
     		currentPage,
     		pages,
     		confidencePool,
-    		nbaPage,
     		mastersPool,
     		pgaPool,
     		usOpenPool,
     		theOpenPool,
+    		pellePoolMasters,
     		picker_activePage_binding
     	];
     }

@@ -1,34 +1,32 @@
 <!-- ##TODO: UNCOMMENT THIS FILE!! -->
 
 <script>
+	console.log("Hello!")
  	import Picker from "./Picker.svelte"
 	import Weekly from "./Weekly.svelte"
 	import WeeklyEspn from "./WeeklyEspn.svelte"
 	import Overall from "./Overall.svelte"
 	import ConfidencePool from "./ConfidencePool/ConfidencePool.svelte"
-	import Nba from "./NBA/Nba.svelte"
 	import MastersPool from "./MastersPool.svelte"
 	import PgaPool from "./PgaPool.svelte"
 	import UsOpenPool from "./UsOpenPool.svelte"
 	import TheOpenPool from "./TheOpenPool.svelte"
+	import PellePoolMasters from "./PellePoolMasters.svelte"
 	import { onMount } from "svelte"
   	let pages = ["Weekly","Overall"]
 	let currentPage = "Weekly"
 	let confidencePool = window.location.href.includes("?confidence")
-	let nbaPage = window.location.href.includes("?nba")
 	let mastersPool = window.location.href.includes("?masters")
 	let pgaPool = window.location.href.includes("?pga")
 	let usOpenPool = window.location.href.includes("?usopen")
 	let theOpenPool = window.location.href.includes("?theopen")
+	let pellePoolMasters = window.location.href.includes("?pellemasters")
+
 </script>
 
 {#if confidencePool}
 	<div id="main">
 		<ConfidencePool />
-	</div>
-{:else if nbaPage}
-	<div id="main">
-		<Nba />
 	</div>
 {:else if mastersPool}
 	<div id="main">
@@ -45,6 +43,10 @@
 {:else if theOpenPool}
 	<div id="main">
 		<TheOpenPool />
+	</div>
+{:else if pellePoolMasters}
+	<div id="main">
+		<PellePoolMasters />
 	</div>
 {:else}
 	<div id="main">
