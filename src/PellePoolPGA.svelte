@@ -111,6 +111,7 @@
 
 			})
     	}
+    	console.log(rawTeams)
     	return rawTeams	
 		
     }
@@ -182,7 +183,7 @@
 </script>
 <br>
 {#if tourneyName}
-	<h1 class="tourney-name">Masters Pool Projected Standings</h1>
+	<h1 class="tourney-name">PGA Pool Projected Standings</h1>
 {:else}
 	<img class="sheets-icon" src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_spreadsheet_x32.png" alt="Loading"><span>&nbsp;Loading current tournament</span>
 {/if}
