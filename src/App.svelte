@@ -14,6 +14,7 @@
 	import PellePoolMasters from "./PellePoolMasters.svelte"
 	import PellePoolPGA from "./PellePoolPGA.svelte"
 	import PellePoolUSOpen from "./PellePoolUSOpen.svelte"
+	import PellePoolBritish from "./PellePoolBritish.svelte"
 	import { onMount } from "svelte"
   	let pages = ["Weekly","Overall"]
 	let currentPage = "Weekly"
@@ -25,6 +26,7 @@
 	let pellePoolMasters = window.location.href.includes("?pellemasters")
 	let pellePoolPGA = window.location.href.includes("?pellepga")
 	let pellePoolUSOpen = window.location.href.includes("?pelleusopen")
+	let pellePoolBritish = window.location.href.includes("?pellebritish")
 
 </script>
 
@@ -59,6 +61,10 @@
 {:else if pellePoolUSOpen}
 	<div id="main">
 		<PellePoolUSOpen />
+	</div>
+{:else if pellePoolBritish}
+	<div id="main">
+		<PellePoolBritish />
 	</div>
 {:else}
 	<div id="main">
